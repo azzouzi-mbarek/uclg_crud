@@ -1,0 +1,1679 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>frontend documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">frontend documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>ModalFormInstitutionComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/modules/admin/institution/modal-form-institution/modal-form-institution.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-modal-form-institution</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./modal-form-institution.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./modal-form-institution.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#bsModalRefCategory">bsModalRefCategory</a>
+                            </li>
+                            <li>
+                                <a href="#categories">categories</a>
+                            </li>
+                            <li>
+                                <a href="#edit">edit</a>
+                            </li>
+                            <li>
+                                <a href="#errors">errors</a>
+                            </li>
+                            <li>
+                                <a href="#formErrors">formErrors</a>
+                            </li>
+                            <li>
+                                <a href="#id">id</a>
+                            </li>
+                            <li>
+                                <a href="#imageUrl">imageUrl</a>
+                            </li>
+                            <li>
+                                <a href="#institution">institution</a>
+                            </li>
+                            <li>
+                                <a href="#institutionForm">institutionForm</a>
+                            </li>
+                            <li>
+                                <a href="#institutions">institutions</a>
+                            </li>
+                            <li>
+                                <a href="#institutionSubject">institutionSubject</a>
+                            </li>
+                            <li>
+                                <a href="#SubmitBtnTitle">SubmitBtnTitle</a>
+                            </li>
+                            <li>
+                                <a href="#title">title</a>
+                            </li>
+                            <li>
+                                <a href="#validationMessages">validationMessages</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#logValidationErrors">logValidationErrors</a>
+                            </li>
+                            <li>
+                                <a href="#mapFormValueToInstitution">mapFormValueToInstitution</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onDecline">onDecline</a>
+                            </li>
+                            <li>
+                                <a href="#onSubmit">onSubmit</a>
+                            </li>
+                            <li>
+                                <a href="#openModalFormInstitutionCategory">openModalFormInstitutionCategory</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(_BsModalRef: BsModalRef, _modalService: BsModalService, _institutionService: <a href="../injectables/InstitutionService.html">InstitutionService</a>, _institutionCategoryService: <a href="../injectables/InstitutionCategoryService.html">InstitutionCategoryService</a>, _errorHandler: <a href="../injectables/ErrorHandlerService.html">ErrorHandlerService</a>, _fb: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="81" class="link-to-prism">src/app/modules/admin/institution/modal-form-institution/modal-form-institution.component.ts:81</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>_BsModalRef</td>
+                                                  
+                                                        <td>
+                                                                    <code>BsModalRef</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_modalService</td>
+                                                  
+                                                        <td>
+                                                                    <code>BsModalService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_institutionService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/InstitutionService.html" target="_self" >InstitutionService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_institutionCategoryService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/InstitutionCategoryService.html" target="_self" >InstitutionCategoryService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_errorHandler</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ErrorHandlerService.html" target="_self" >ErrorHandlerService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_fb</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="logValidationErrors"></a>
+                    <span class="name">
+                        <b>
+                            logValidationErrors
+                        </b>
+                        <a href="#logValidationErrors"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>logValidationErrors(group: <a href="https://angular.io/api/forms/FormGroup" target="_blank">FormGroup</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="160"
+                            class="link-to-prism">src/app/modules/admin/institution/modal-form-institution/modal-form-institution.component.ts:160</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>group</td>
+                                    <td>
+                                                <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>this.institutionForm</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="mapFormValueToInstitution"></a>
+                    <span class="name">
+                        <b>
+                            mapFormValueToInstitution
+                        </b>
+                        <a href="#mapFormValueToInstitution"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>mapFormValueToInstitution()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="191"
+                            class="link-to-prism">src/app/modules/admin/institution/modal-form-institution/modal-form-institution.component.ts:191</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="99"
+                            class="link-to-prism">src/app/modules/admin/institution/modal-form-institution/modal-form-institution.component.ts:99</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onDecline"></a>
+                    <span class="name">
+                        <b>
+                            onDecline
+                        </b>
+                        <a href="#onDecline"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onDecline()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="185"
+                            class="link-to-prism">src/app/modules/admin/institution/modal-form-institution/modal-form-institution.component.ts:185</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onSubmit"></a>
+                    <span class="name">
+                        <b>
+                            onSubmit
+                        </b>
+                        <a href="#onSubmit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onSubmit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="210"
+                            class="link-to-prism">src/app/modules/admin/institution/modal-form-institution/modal-form-institution.component.ts:210</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openModalFormInstitutionCategory"></a>
+                    <span class="name">
+                        <b>
+                            openModalFormInstitutionCategory
+                        </b>
+                        <a href="#openModalFormInstitutionCategory"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openModalFormInstitutionCategory(category: <a href="../classes/InstitutionCategory.html">InstitutionCategory</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="260"
+                            class="link-to-prism">src/app/modules/admin/institution/modal-form-institution/modal-form-institution.component.ts:260</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>category</td>
+                                    <td>
+                                                <code><a href="../classes/InstitutionCategory.html" target="_self" >InstitutionCategory</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>null</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="bsModalRefCategory"></a>
+                        <span class="name">
+                            <b>
+                            bsModalRefCategory</b>
+                            <a href="#bsModalRefCategory"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>BsModalRef</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/modules/admin/institution/modal-form-institution/modal-form-institution.component.ts:30</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="categories"></a>
+                        <span class="name">
+                            <b>
+                            categories</b>
+                            <a href="#categories"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>any[]</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/modules/admin/institution/modal-form-institution/modal-form-institution.component.ts:41</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="edit"></a>
+                        <span class="name">
+                            <b>
+                            edit</b>
+                            <a href="#edit"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank" >Boolean</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/modules/admin/institution/modal-form-institution/modal-form-institution.component.ts:33</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="errors"></a>
+                        <span class="name">
+                            <b>
+                            errors</b>
+                            <a href="#errors"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/modules/admin/institution/modal-form-institution/modal-form-institution.component.ts:42</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="formErrors"></a>
+                        <span class="name">
+                            <b>
+                            formErrors</b>
+                            <a href="#formErrors"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+    &#x27;name&#x27;: &#x27;&#x27;,
+
+    &#x27;email&#x27;: &#x27;&#x27;,
+    &#x27;acronym&#x27;: &#x27;&#x27;,
+    &#x27;foundation_year&#x27;: &#x27;&#x27;,
+    &#x27;web_site&#x27;: &#x27;&#x27;,
+    &#x27;category_id&#x27;: &#x27;&#x27;,
+    &#x27;phone&#x27;: &#x27;&#x27;,
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/app/modules/admin/institution/modal-form-institution/modal-form-institution.component.ts:46</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="id"></a>
+                        <span class="name">
+                            <b>
+                            id</b>
+                            <a href="#id"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/modules/admin/institution/modal-form-institution/modal-form-institution.component.ts:32</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="imageUrl"></a>
+                        <span class="name">
+                            <b>
+                            imageUrl</b>
+                            <a href="#imageUrl"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;/assets/img/camera.png&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/modules/admin/institution/modal-form-institution/modal-form-institution.component.ts:35</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="institution"></a>
+                        <span class="name">
+                            <b>
+                            institution</b>
+                            <a href="#institution"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/Institution.html" target="_self" >Institution</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/modules/admin/institution/modal-form-institution/modal-form-institution.component.ts:38</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="institutionForm"></a>
+                        <span class="name">
+                            <b>
+                            institutionForm</b>
+                            <a href="#institutionForm"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/modules/admin/institution/modal-form-institution/modal-form-institution.component.ts:44</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="institutions"></a>
+                        <span class="name">
+                            <b>
+                            institutions</b>
+                            <a href="#institutions"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/modules/admin/institution/modal-form-institution/modal-form-institution.component.ts:39</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="institutionSubject"></a>
+                        <span class="name">
+                            <b>
+                            institutionSubject</b>
+                            <a href="#institutionSubject"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/modules/admin/institution/modal-form-institution/modal-form-institution.component.ts:40</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="SubmitBtnTitle"></a>
+                        <span class="name">
+                            <b>
+                            SubmitBtnTitle</b>
+                            <a href="#SubmitBtnTitle"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank" >String</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/modules/admin/institution/modal-form-institution/modal-form-institution.component.ts:34</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="title"></a>
+                        <span class="name">
+                            <b>
+                            title</b>
+                            <a href="#title"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank" >String</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/modules/admin/institution/modal-form-institution/modal-form-institution.component.ts:31</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="validationMessages"></a>
+                        <span class="name">
+                            <b>
+                            validationMessages</b>
+                            <a href="#validationMessages"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+    &#x27;name&#x27;: {
+      &#x27;required&#x27;: &#x27;Full Name is required.&#x27;,
+      &#x27;minlength&#x27;: &#x27;Full Name must be greater than 2 characters.&#x27;,
+      &#x27;maxlength&#x27;: &#x27;Full Name must be less than 30 characters.&#x27;,
+      &#x27;update_unique&#x27;: &#x27;deja utitlisee&#x27;,
+    },
+    &#x27;email&#x27;: {
+      &#x27;email&#x27;: &#x27;enter a valid email.&#x27;
+    },
+    &#x27;acronym&#x27;: {
+      &#x27;minlength&#x27;: &#x27;Acronym must be greater than 2 characters.&#x27;
+    },
+    &#x27;category_id&#x27;: {
+      &#x27;required&#x27;: &#x27;Category is required&#x27;
+    },
+    &#x27;foundation_year&#x27;: {
+      &#x27;pattern&#x27;: &#x27;enter a valid year&#x27;
+    },
+    &#x27;web_site&#x27;: {
+      &#x27;pattern&#x27;: &#x27;enter a valid Web Url&#x27;
+    },
+    // &#x27;phone&#x27;: {
+    //   &#x27;pattern&#x27;: &#x27;enter a valid phone&#x27;
+    // }
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/app/modules/admin/institution/modal-form-institution/modal-form-institution.component.ts:56</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { BsModalService } from &#x27;ngx-bootstrap/modal&#x27;;
+
+
+import { Component, OnInit, OnDestroy } from &#x27;@angular/core&#x27;;
+import { Subject, Observable, from } from &#x27;rxjs&#x27;;
+import { BsModalRef } from &#x27;ngx-bootstrap&#x27;;
+
+
+import * as insQuery from &#x27;./../institutionQueries&#x27;;
+import { FormGroup, FormBuilder, Validators, AbstractControl, ValidationErrors } from &#x27;@angular/forms&#x27;;
+import { ModalFormInstitutionCategoryComponent } from &#x27;../modal-form-institution-category/modal-form-institution-category.component&#x27;;
+
+import { CustomValidators } from &#x27;src/app/shared/validators/costum.validators&#x27;;
+import { Institution } from &#x27;../Institution.model&#x27;;
+import { InstitutionService } from &#x27;../institution.service&#x27;;
+import { InstitutionCategoryService } from &#x27;../institution-category.service&#x27;;
+import { ErrorHandlerService } from &#x27;src/app/modules/auth/error-handler.service&#x27;;
+import { InstitutionCategory } from &#x27;../InstitutionCategory.model&#x27;;
+
+
+
+@Component({
+  selector: &#x27;app-modal-form-institution&#x27;,
+  templateUrl: &#x27;./modal-form-institution.component.html&#x27;,
+  styleUrls: [&#x27;./modal-form-institution.component.css&#x27;]
+})
+export class ModalFormInstitutionComponent implements OnInit {
+
+  bsModalRefCategory: BsModalRef;
+  title: String;
+  id: number;
+  edit: Boolean;
+  SubmitBtnTitle: String;
+  imageUrl &#x3D; &#x27;/assets/img/camera.png&#x27;;
+
+  // institution modal parms
+  institution: Institution;
+  institutions: any;
+  institutionSubject: any;
+  categories: any[];
+  errors: any &#x3D; [];
+  // form params
+  institutionForm: FormGroup;
+  // validation form
+  formErrors &#x3D; {
+    &#x27;name&#x27;: &#x27;&#x27;,
+
+    &#x27;email&#x27;: &#x27;&#x27;,
+    &#x27;acronym&#x27;: &#x27;&#x27;,
+    &#x27;foundation_year&#x27;: &#x27;&#x27;,
+    &#x27;web_site&#x27;: &#x27;&#x27;,
+    &#x27;category_id&#x27;: &#x27;&#x27;,
+    &#x27;phone&#x27;: &#x27;&#x27;,
+  };
+  validationMessages &#x3D; {
+    &#x27;name&#x27;: {
+      &#x27;required&#x27;: &#x27;Full Name is required.&#x27;,
+      &#x27;minlength&#x27;: &#x27;Full Name must be greater than 2 characters.&#x27;,
+      &#x27;maxlength&#x27;: &#x27;Full Name must be less than 30 characters.&#x27;,
+      &#x27;update_unique&#x27;: &#x27;deja utitlisee&#x27;,
+    },
+    &#x27;email&#x27;: {
+      &#x27;email&#x27;: &#x27;enter a valid email.&#x27;
+    },
+    &#x27;acronym&#x27;: {
+      &#x27;minlength&#x27;: &#x27;Acronym must be greater than 2 characters.&#x27;
+    },
+    &#x27;category_id&#x27;: {
+      &#x27;required&#x27;: &#x27;Category is required&#x27;
+    },
+    &#x27;foundation_year&#x27;: {
+      &#x27;pattern&#x27;: &#x27;enter a valid year&#x27;
+    },
+    &#x27;web_site&#x27;: {
+      &#x27;pattern&#x27;: &#x27;enter a valid Web Url&#x27;
+    },
+    // &#x27;phone&#x27;: {
+    //   &#x27;pattern&#x27;: &#x27;enter a valid phone&#x27;
+    // }
+  };
+
+  constructor(
+    private _BsModalRef: BsModalRef,
+    private _modalService: BsModalService,
+    private _institutionService: InstitutionService,
+    private _institutionCategoryService: InstitutionCategoryService,
+    private _errorHandler: ErrorHandlerService,
+    private _fb: FormBuilder) {
+
+
+  }
+
+
+
+
+
+
+  ngOnInit() {
+
+    // initiate forms
+    this.institutionForm &#x3D; this._fb.group({
+      name: [&#x27;&#x27;,
+        [Validators.required, Validators.minLength(2), CustomValidators.updateUnique(this.institutions, this.institution.id)]
+      ],
+      acronym: [&#x27;&#x27;, [Validators.minLength(2), Validators.maxLength(30)]],
+      description: [&#x27;&#x27;],
+      foundation_year: [&#x27;&#x27;, [Validators.pattern(&#x27;^[12][0-9]{3}$&#x27;)]],
+      country_seat: [&#x27;&#x27;],
+      organe_tutelle: [&#x27;&#x27;],
+      areas_intervention: [&#x27;&#x27;],
+      target_beneficiary: [&#x27;&#x27;],
+      phone: [&#x27;&#x27;],
+      email: [&#x27;&#x27;, [Validators.email]],
+      // tslint:disable-next-line: max-line-length
+      web_site: [&#x27;&#x27;, [Validators.pattern(&#x27;^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$&#x27;)]],
+      address: [&#x27;&#x27;],
+      localisation: [&#x27;&#x27;],
+      category: this._fb.group({
+        category_id: [&#x27;&#x27;, [Validators.required]]
+      }),
+    });
+
+    // When any of the form control value in employee form changes
+    // our validation function logValidationErrors() is called
+    this.institutionForm.valueChanges.subscribe(
+      (data) &#x3D;&gt; {
+        this.logValidationErrors(this.institutionForm);
+      }
+    )
+
+
+    // determinate edit of modal and initiate institution object -  true if in edit
+
+    this.edit &#x3D; this.institution.id !&#x3D;&#x3D; null ? true : false;
+
+    if (this.edit) {
+      this.institutionForm.patchValue({ category: { category_id: this.institution.category.id } });
+      this.institutionForm.patchValue(this.institution);
+    }
+
+    this.institutionSubject &#x3D; new Subject();
+
+    this.title &#x3D; !this.edit ? &#x27;Nouvelle Institution&#x27; : this.institution.name;
+    this.SubmitBtnTitle &#x3D; !this.edit ? &#x27;Sauvegarder&#x27; : &#x27;Éditer&#x27;;
+
+    // get categories 
+    this._institutionCategoryService.getCategories(insQuery.INSTITUTION_CATEGORIES_QUERY).valueChanges
+      .subscribe(
+        (res: any) &#x3D;&gt; {
+          this.categories &#x3D; res.data.institutionCategories;
+        },
+        (errors) &#x3D;&gt; { this._errorHandler.handleError(errors); }
+      );
+
+    console.log(this.institutions);
+  }
+
+
+  logValidationErrors(group: FormGroup &#x3D; this.institutionForm): void {
+    Object.keys(group.controls).forEach((key: string) &#x3D;&gt; {
+      const abstractControl &#x3D; group.get(key);
+      if (abstractControl instanceof FormGroup) {
+        this.logValidationErrors(abstractControl);
+      } else {
+        this.formErrors[key] &#x3D; &#x27;&#x27;;
+        if (abstractControl &amp;&amp; abstractControl.invalid
+          &amp;&amp; (abstractControl.touched || abstractControl.dirty)) {
+          const messages &#x3D; this.validationMessages[key];
+          for (const errorKey in abstractControl.errors) {
+            if (errorKey) {
+              this.formErrors[key] +&#x3D; messages[errorKey] + &#x27; &#x27;;
+            }
+          }
+        }
+      }
+    });
+
+  }
+
+
+
+
+
+  onDecline() {
+    this._BsModalRef.hide();
+  }
+
+
+
+  mapFormValueToInstitution() {
+    this.institution.name &#x3D; this.institutionForm.value.name;
+    this.institution.acronym &#x3D; this.institutionForm.value.acronym;
+    this.institution.description &#x3D; this.institutionForm.value.description;
+    this.institution.foundation_year &#x3D; this.institutionForm.value.foundation_year;
+    this.institution.country_seat &#x3D; this.institutionForm.value.country_seat;
+    this.institution.organe_tutelle &#x3D; this.institutionForm.value.organe_tutelle;
+    this.institution.areas_intervention &#x3D; this.institutionForm.value.areas_intervention;
+    this.institution.target_beneficiary &#x3D; this.institutionForm.value.target_beneficiary;
+    this.institution.phone &#x3D; this.institutionForm.value.phone;
+    this.institution.email &#x3D; this.institutionForm.value.email;
+    this.institution.web_site &#x3D; this.institutionForm.value.web_site;
+    this.institution.address &#x3D; this.institutionForm.value.address;
+    this.institution.localisation &#x3D; this.institutionForm.value.localisation;
+    this.institution.category.id &#x3D; this.institutionForm.value.category.category_id;
+  }
+
+
+
+  onSubmit() {
+
+    this.mapFormValueToInstitution();
+
+    const mutation &#x3D; this.edit ?
+      insQuery.MUTATION_UPDATE_INSTITUTION : insQuery.MUTATION_CREATE_INSTITUTION;
+
+    this._institutionService.institutionMutation(mutation, this.institution)
+      .subscribe(
+        (res: any) &#x3D;&gt; {
+
+          const data &#x3D; {
+            institution: this.edit ? res.data.UpdateInstitution : res.data.CreateInstitution,
+            edit: this.edit ? true : false
+          };
+          this.institutionSubject.next(data);
+          this._BsModalRef.hide();
+        },
+        (errors) &#x3D;&gt; {
+          this.formErrors &#x3D; this._errorHandler.handleError(errors);
+
+        }
+      );
+
+
+  }
+
+
+
+  // handleFlagInput(file: FileList) {
+  //   this.imageToUpload &#x3D; file.item(0);
+  //   const extension &#x3D; this.imageToUpload.name.split(&#x27;.&#x27;)[1].toLocaleLowerCase();
+
+  //   if ([&#x27;jpg&#x27;, &#x27;png&#x27;, &#x27;jpeg&#x27;].includes(extension.toLowerCase())) {
+  //     const reader &#x3D; new FileReader();
+  //     reader.onload &#x3D; (event: any) &#x3D;&gt; {
+  //       this.imageUrl &#x3D; event.target.result;
+  //     };
+  //     reader.readAsDataURL(this.imageToUpload);
+
+  //     this.errorFlag &#x3D; null;
+  //   } else {
+
+  //     this.errorFlag &#x3D; &#x27;Choose file with JPEG - JPG - PNG Format !&#x27;;
+  //   }
+  // }
+
+
+
+
+  openModalFormInstitutionCategory(category: InstitutionCategory &#x3D; null) {
+
+    // tslint:disable-next-line:no-shadowed-variable
+    const initialState &#x3D; {
+      category: category,
+    };
+
+    this.bsModalRefCategory &#x3D; this._modalService.show(ModalFormInstitutionCategoryComponent, { class: &#x27;modal-lg&#x27;, initialState });
+    this.bsModalRefCategory.content.categorySubject.subscribe(
+      (res) &#x3D;&gt; {
+
+        this.categories.push(res.category);
+
+      });
+  }
+
+
+
+
+
+
+
+}
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;modal-header&quot; [ngClass]&#x3D;&quot;{ &#x27;bg-primary&#x27; : !edit, &#x27;bg-warning&#x27; : edit }&quot;&gt;
+  &lt;h4 class&#x3D;&quot;modal-title  &quot;&gt;{{title}}&lt;/h4&gt;
+  &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;close pull-right&quot; aria-label&#x3D;&quot;Close&quot; (click)&#x3D;&quot;onDecline()&quot;&gt;
+    &lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;form [formGroup]&#x3D;&quot;institutionForm&quot; (ngSubmit)&#x3D;&quot;onSubmit()&quot;&gt;
+  &lt;div class&#x3D;&quot;modal-body&quot;&gt;
+    &lt;div class&#x3D;&quot;row&quot;&gt;
+
+
+      &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+
+          &lt;label class&#x3D;&quot;col-md-3 required&quot; [ngClass]&#x3D;&quot;{&#x27;text-danger&#x27; : formErrors.name}&quot; for&#x3D;&quot;name&quot;&gt; Nom&lt;/label&gt;
+
+          &lt;input id&#x3D;&quot;name&quot; formControlName&#x3D;&quot;name&quot; type&#x3D;&quot;text&quot; class&#x3D;&quot;col-md-9 form-control-sm&quot;
+            [ngClass]&#x3D;&quot;{&#x27;error&#x27; : formErrors.name}&quot; (blur)&#x3D;&quot;logValidationErrors()&quot;&gt;
+
+          &lt;div class&#x3D;&quot;offset-3&quot;&gt;
+            &lt;label id&#x3D;&quot;nom&quot; class&#x3D;&quot;text-danger&quot; for&#x3D;&quot;name&quot; [hidden]&#x3D;&quot;!formErrors.name&quot;&gt;{{ formErrors.name}}&lt;/label&gt;
+          &lt;/div&gt;
+
+
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;label class&#x3D;&quot;col-md-2 pl-0&quot; for&#x3D;&quot;acronym&quot; [ngClass]&#x3D;&quot;{&#x27;text-danger&#x27; : formErrors.acronym}&quot;&gt;Acronyme&lt;/label&gt;
+          &lt;input id&#x3D;&quot;acronym&quot; formControlName&#x3D;&quot;acronym&quot; type&#x3D;&quot;text&quot; class&#x3D;&quot;col-md-10 form-control-sm&quot;
+            [ngClass]&#x3D;&quot;{&#x27;error&#x27; : formErrors.acronym}&quot; (blur)&#x3D;&quot;logValidationErrors()&quot;&gt;
+          &lt;div class&#x3D;&quot;offset-2&quot;&gt;
+            &lt;label id&#x3D;&quot;acronym&quot; class&#x3D;&quot;text-danger&quot; for&#x3D;&quot;acronym&quot; [hidden]&#x3D;&quot;!formErrors.acronym&quot;&gt;{{
+              formErrors.acronym}}&lt;/label&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;col-md-12&quot; formGroupName&#x3D;&quot;category&quot;&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;label class&#x3D;&quot;col-md-2 required&quot; for&#x3D;&quot;category_id&quot; [ngClass]&#x3D;&quot;{&#x27;text-danger&#x27; : formErrors.category_id}&quot;&gt;
+            Catégorie&lt;/label&gt;
+
+          &lt;select id&#x3D;&quot;category_id&quot; formControlName&#x3D;&quot;category_id&quot; class&#x3D;&quot;col-md-7 form-control-sm&quot;
+            [ngClass]&#x3D;&quot;{&#x27;error&#x27; : formErrors.category_id}&quot; (blur)&#x3D;&quot;logValidationErrors()&quot;&gt;
+            &lt;option value&#x3D;&#x27;&#x27; disabled selected&gt;Sélectionnez catégorie&lt;/option&gt;
+            &lt;option *ngFor&#x3D;&quot;let category of categories&quot; value&#x3D;{{category.id}}&gt;{{ category.name}}&lt;/option&gt;
+          &lt;/select&gt;
+
+
+
+          &lt;button (click)&#x3D;&quot;openModalFormInstitutionCategory()&quot; type&#x3D;&quot;button&quot;
+            class&#x3D;&quot;btn btn-primary btn-xs  float-right&quot;&gt;Ajouter
+            Catégorie&lt;/button&gt;
+          &lt;div class&#x3D;&quot;offset-2&quot;&gt;
+            &lt;label class&#x3D;&quot;text-danger&quot; for&#x3D;&quot;category_id&quot; [hidden]&#x3D;&quot;!formErrors.category_id&quot;&gt;
+              {{formErrors.category_id}}&lt;/label&gt;
+
+          &lt;/div&gt;
+
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+        &lt;div class&#x3D;&quot;form-group row mr-0 ml-0  &quot;&gt;
+          &lt;label class&#x3D;&quot;col-sm-2  &quot; for&#x3D;&quot;description&quot;&gt;Description&lt;/label&gt;
+          &lt;textarea rows&#x3D;&quot;3&quot; id&#x3D;&quot;description&quot; formControlName&#x3D;&quot;description&quot; class&#x3D;&quot;col-md-10 form-control &quot;&gt;&lt;/textarea&gt;
+          &lt;label class&#x3D;&quot;error pl-2&quot; for&#x3D;&quot;description&quot; [hidden]&#x3D;&quot;!errors.description&quot;&gt; {{errors.description}}&lt;/label&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+
+    &lt;hr class&#x3D;&quot;hr-line-solid&quot;&gt;
+    &lt;div class&#x3D;&quot;row&quot;&gt;
+
+
+      &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+        &lt;div class&#x3D;&quot;form-group &quot;&gt;
+          &lt;label class&#x3D;&quot;col-md-5&quot; [ngClass]&#x3D;&quot;{&#x27;text-danger&#x27; : formErrors.foundation_year}&quot;
+            for&#x3D;&quot;foundation_year&quot;&gt;Foundation
+            year&lt;/label&gt;
+          &lt;input id&#x3D;&quot;foundation_year&quot; formControlName&#x3D;&quot;foundation_year&quot; type&#x3D;&quot;text&quot; class&#x3D;&quot;col-md-7 form-control-sm&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;offset-5&quot;&gt;
+          &lt;label id&#x3D;&quot;foundation_year&quot; class&#x3D;&quot;text-danger&quot; for&#x3D;&quot;foundation_year&quot; [hidden]&#x3D;&quot;!formErrors.foundation_year&quot;&gt;{{
+            formErrors.foundation_year}}&lt;/label&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+        &lt;div class&#x3D;&quot;form-group {{ errors.country_seat ? &#x27;has-error&#x27; : &#x27;&#x27; }}&quot;&gt;
+          &lt;label class&#x3D;&quot;col-md-5&quot; for&#x3D;&quot;country_seat&quot;&gt;Country seat&lt;/label&gt;
+          &lt;input id&#x3D;&quot;country_seat&quot; formControlName&#x3D;&quot;country_seat&quot; type&#x3D;&quot;text&quot; class&#x3D;&quot;col-md-7 form-control-sm&quot;&gt;
+          &lt;label class&#x3D;&quot;error pl-2&quot; for&#x3D;&quot;country_seat&quot; [hidden]&#x3D;&quot;!errors.country_seat&quot;&gt; {{errors.country_seat}}&lt;/label&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;hr class&#x3D;&quot;hr-line-solid&quot;&gt;
+
+    &lt;div class&#x3D;&quot;row&quot;&gt;
+      &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+        &lt;div class&#x3D;&quot;form-group {{ errors.organe_tutelle ? &#x27;has-error&#x27; : &#x27;&#x27; }} &quot;&gt;
+          &lt;label class&#x3D;&quot;col-md-3&quot; for&#x3D;&quot;organe_tutelle&quot;&gt;Organe tutelle&lt;/label&gt;
+          &lt;input id&#x3D;&quot;organe_tutelle&quot; formControlName&#x3D;&quot;organe_tutelle&quot; type&#x3D;&quot;text&quot; class&#x3D;&quot;col-md-9 form-control-sm&quot;&gt;
+        &lt;/div&gt;
+        &lt;label class&#x3D;&quot;error pl-2&quot; for&#x3D;&quot;organe_tutelle&quot; [hidden]&#x3D;&quot;!errors.organe_tutelle&quot;&gt;
+          {{errors.organe_tutelle}}&lt;/label&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+        &lt;div class&#x3D;&quot;form-group {{ errors.areas_intervention ? &#x27;has-error&#x27; : &#x27;&#x27; }} &quot;&gt;
+          &lt;label class&#x3D;&quot;col-md-3&quot; for&#x3D;&quot;areas_intervention&quot;&gt;Areas intervention&lt;/label&gt;
+          &lt;input id&#x3D;&quot;areas_intervention&quot; formControlName&#x3D;&quot;areas_intervention&quot; type&#x3D;&quot;text&quot;
+            class&#x3D;&quot;col-md-9 form-control-sm&quot;&gt;
+        &lt;/div&gt;
+        &lt;label class&#x3D;&quot;error pl-2&quot; for&#x3D;&quot;areas_intervention&quot; [hidden]&#x3D;&quot;!errors.areas_intervention&quot;&gt;
+          {{errors.areas_intervention}}&lt;/label&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+        &lt;div class&#x3D;&quot;form-group {{ errors.target_beneficiary ? &#x27;has-error&#x27; : &#x27;&#x27; }} &quot;&gt;
+          &lt;label class&#x3D;&quot;col-md-3&quot; for&#x3D;&quot;target_beneficiary&quot;&gt;Target beneficiary&lt;/label&gt;
+          &lt;input id&#x3D;&quot;target_beneficiary&quot; formControlName&#x3D;&quot;target_beneficiary&quot; type&#x3D;&quot;text&quot;
+            class&#x3D;&quot;col-md-9 form-control-sm&quot;&gt;
+        &lt;/div&gt;
+        &lt;label class&#x3D;&quot;error pl-2&quot; for&#x3D;&quot;target_beneficiary&quot; [hidden]&#x3D;&quot;!errors.target_beneficiary&quot;&gt;
+          {{errors.target_beneficiary}}&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+
+    &lt;hr class&#x3D;&quot;hr-line-solid&quot;&gt;
+
+    &lt;div class&#x3D;&quot;row&quot;&gt;
+      &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;label class&#x3D;&quot;col-md-2&quot; [ngClass]&#x3D;&quot;{&#x27;text-danger&#x27; : formErrors.phone}&quot; for&#x3D;&quot;phone&quot;&gt;Phone&lt;/label&gt;
+          &lt;input id&#x3D;&quot;phone&quot; formControlName&#x3D;&quot;phone&quot; type&#x3D;&quot;text&quot; [ngClass]&#x3D;&quot;{&#x27;error&#x27; : formErrors.phone}&quot;
+            (blur)&#x3D;&quot;logValidationErrors()&quot; class&#x3D;&quot;col-md-10 form-control-sm&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;offset-2&quot;&gt;
+          &lt;label id&#x3D;&quot;phone&quot; class&#x3D;&quot;text-danger&quot; for&#x3D;&quot;phone&quot; [hidden]&#x3D;&quot;!formErrors.phone&quot;&gt;{{ formErrors.phone}}&lt;/label&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;label class&#x3D;&quot;col-md-2&quot; [ngClass]&#x3D;&quot;{&#x27;text-danger&#x27; : formErrors.email}&quot; for&#x3D;&quot;email&quot;&gt;Mail&lt;/label&gt;
+          &lt;input id&#x3D;&quot;email&quot; formControlName&#x3D;&quot;email&quot; type&#x3D;&quot;text&quot; [ngClass]&#x3D;&quot;{&#x27;error&#x27; : formErrors.email}&quot;
+            (blur)&#x3D;&quot;logValidationErrors()&quot; class&#x3D;&quot;col-md-10 form-control-sm&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;offset-2&quot;&gt;
+          &lt;label id&#x3D;&quot;email&quot; class&#x3D;&quot;text-danger&quot; for&#x3D;&quot;email&quot; [hidden]&#x3D;&quot;!formErrors.email&quot;&gt;{{ formErrors.email}}&lt;/label&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;label class&#x3D;&quot;col-md-2&quot; [ngClass]&#x3D;&quot;{&#x27;text-danger&#x27; : formErrors.web_site}&quot; for&#x3D;&quot;web_site&quot;&gt;Web&lt;/label&gt;
+          &lt;input id&#x3D;&quot;web_site&quot; formControlName&#x3D;&quot;web_site&quot; type&#x3D;&quot;text&quot; [ngClass]&#x3D;&quot;{&#x27;error&#x27; : formErrors.web_site}&quot;
+            (blur)&#x3D;&quot;logValidationErrors()&quot; class&#x3D;&quot;col-md-10 form-control-sm&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;offset-2&quot;&gt;
+          &lt;label id&#x3D;&quot;web_site&quot; class&#x3D;&quot;text-danger&quot; for&#x3D;&quot;web_site&quot; [hidden]&#x3D;&quot;!formErrors.web_site&quot;&gt;{{
+            formErrors.web_site}}&lt;/label&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+        &lt;div class&#x3D;&quot;form-group {{ errors.address ? &#x27;has-error&#x27; : &#x27;&#x27; }} &quot;&gt;
+          &lt;label class&#x3D;&quot;col-md-2 pl-0&quot; for&#x3D;&quot;address&quot;&gt;Addresse&lt;/label&gt;
+          &lt;input id&#x3D;&quot;address&quot; formControlName&#x3D;&quot;address&quot; type&#x3D;&quot;text&quot; class&#x3D;&quot;col-md-10 form-control-sm&quot;&gt;
+        &lt;/div&gt;
+        &lt;label class&#x3D;&quot;error pl-2&quot; for&#x3D;&quot;address&quot; [hidden]&#x3D;&quot;!errors.address&quot;&gt; {{errors.address}}&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;hr class&#x3D;&quot;hr-line-solid&quot;&gt;
+
+    &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+      &lt;div class&#x3D;&quot;form-group {{ errors.localisation ? &#x27;has-error&#x27; : &#x27;&#x27; }} &quot;&gt;
+        &lt;label class&#x3D;&quot;col-md-2&quot; for&#x3D;&quot;localisation&quot;&gt;localisation&lt;/label&gt;
+        &lt;input id&#x3D;&quot;localisation&quot; formControlName&#x3D;&quot;localisation&quot; type&#x3D;&quot;text&quot; class&#x3D;&quot;col-md-10 form-control-sm&quot;&gt;
+      &lt;/div&gt;
+      &lt;label class&#x3D;&quot;error pl-2&quot; for&#x3D;&quot;localisation&quot; [hidden]&#x3D;&quot;!errors.localisation&quot;&gt; {{errors.localisation}}&lt;/label&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+
+
+  &lt;div class&#x3D;&quot;modal-footer&quot;&gt;
+
+    &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default&quot; (click)&#x3D;&quot;onDecline()&quot;&gt;Annuler&lt;/button&gt;
+    &lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn &quot; [ngClass]&#x3D;&quot;{ &#x27;btn-primary&#x27; : !edit, &#x27;btn-warning&#x27; : edit }&quot;
+      [disabled]&#x3D;&quot;institutionForm.invalid&quot;&gt;
+      {{SubmitBtnTitle}}
+    &lt;/button&gt;
+
+  &lt;/div&gt;
+&lt;/form&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./modal-form-institution.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.modal-xl {
+  max-width: 1000px;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="modal-header" [ngClass]="{ \'bg-primary\' : !edit, \'bg-warning\' : edit }">  <h4 class="modal-title  ">{{title}}</h4>  <button type="button" class="close pull-right" aria-label="Close" (click)="onDecline()">    <span aria-hidden="true">&times;</span>  </button></div><form [formGroup]="institutionForm" (ngSubmit)="onSubmit()">  <div class="modal-body">    <div class="row">      <div class="col-md-6">        <div class="form-group">          <label class="col-md-3 required" [ngClass]="{\'text-danger\' : formErrors.name}" for="name"> Nom</label>          <input id="name" formControlName="name" type="text" class="col-md-9 form-control-sm"            [ngClass]="{\'error\' : formErrors.name}" (blur)="logValidationErrors()">          <div class="offset-3">            <label id="nom" class="text-danger" for="name" [hidden]="!formErrors.name">{{ formErrors.name}}</label>          </div>        </div>      </div>      <div class="col-md-6">        <div class="form-group">          <label class="col-md-2 pl-0" for="acronym" [ngClass]="{\'text-danger\' : formErrors.acronym}">Acronyme</label>          <input id="acronym" formControlName="acronym" type="text" class="col-md-10 form-control-sm"            [ngClass]="{\'error\' : formErrors.acronym}" (blur)="logValidationErrors()">          <div class="offset-2">            <label id="acronym" class="text-danger" for="acronym" [hidden]="!formErrors.acronym">{{              formErrors.acronym}}</label>          </div>        </div>      </div>      <div class="col-md-12" formGroupName="category">        <div class="form-group">          <label class="col-md-2 required" for="category_id" [ngClass]="{\'text-danger\' : formErrors.category_id}">            Catégorie</label>          <select id="category_id" formControlName="category_id" class="col-md-7 form-control-sm"            [ngClass]="{\'error\' : formErrors.category_id}" (blur)="logValidationErrors()">            <option value=\'\' disabled selected>Sélectionnez catégorie</option>            <option *ngFor="let category of categories" value={{category.id}}>{{ category.name}}</option>          </select>          <button (click)="openModalFormInstitutionCategory()" type="button"            class="btn btn-primary btn-xs  float-right">Ajouter            Catégorie</button>          <div class="offset-2">            <label class="text-danger" for="category_id" [hidden]="!formErrors.category_id">              {{formErrors.category_id}}</label>          </div>        </div>      </div>      <div class="col-md-12">        <div class="form-group row mr-0 ml-0  ">          <label class="col-sm-2  " for="description">Description</label>          <textarea rows="3" id="description" formControlName="description" class="col-md-10 form-control "></textarea>          <label class="error pl-2" for="description" [hidden]="!errors.description"> {{errors.description}}</label>        </div>      </div>    </div>    <hr class="hr-line-solid">    <div class="row">      <div class="col-md-6">        <div class="form-group ">          <label class="col-md-5" [ngClass]="{\'text-danger\' : formErrors.foundation_year}"            for="foundation_year">Foundation            year</label>          <input id="foundation_year" formControlName="foundation_year" type="text" class="col-md-7 form-control-sm">        </div>        <div class="offset-5">          <label id="foundation_year" class="text-danger" for="foundation_year" [hidden]="!formErrors.foundation_year">{{            formErrors.foundation_year}}</label>        </div>      </div>      <div class="col-md-6">        <div class="form-group {{ errors.country_seat ? \'has-error\' : \'\' }}">          <label class="col-md-5" for="country_seat">Country seat</label>          <input id="country_seat" formControlName="country_seat" type="text" class="col-md-7 form-control-sm">          <label class="error pl-2" for="country_seat" [hidden]="!errors.country_seat"> {{errors.country_seat}}</label>        </div>      </div>    </div>    <hr class="hr-line-solid">    <div class="row">      <div class="col-md-12">        <div class="form-group {{ errors.organe_tutelle ? \'has-error\' : \'\' }} ">          <label class="col-md-3" for="organe_tutelle">Organe tutelle</label>          <input id="organe_tutelle" formControlName="organe_tutelle" type="text" class="col-md-9 form-control-sm">        </div>        <label class="error pl-2" for="organe_tutelle" [hidden]="!errors.organe_tutelle">          {{errors.organe_tutelle}}</label>      </div>      <div class="col-md-12">        <div class="form-group {{ errors.areas_intervention ? \'has-error\' : \'\' }} ">          <label class="col-md-3" for="areas_intervention">Areas intervention</label>          <input id="areas_intervention" formControlName="areas_intervention" type="text"            class="col-md-9 form-control-sm">        </div>        <label class="error pl-2" for="areas_intervention" [hidden]="!errors.areas_intervention">          {{errors.areas_intervention}}</label>      </div>      <div class="col-md-12">        <div class="form-group {{ errors.target_beneficiary ? \'has-error\' : \'\' }} ">          <label class="col-md-3" for="target_beneficiary">Target beneficiary</label>          <input id="target_beneficiary" formControlName="target_beneficiary" type="text"            class="col-md-9 form-control-sm">        </div>        <label class="error pl-2" for="target_beneficiary" [hidden]="!errors.target_beneficiary">          {{errors.target_beneficiary}}</label>      </div>    </div>    <hr class="hr-line-solid">    <div class="row">      <div class="col-md-6">        <div class="form-group">          <label class="col-md-2" [ngClass]="{\'text-danger\' : formErrors.phone}" for="phone">Phone</label>          <input id="phone" formControlName="phone" type="text" [ngClass]="{\'error\' : formErrors.phone}"            (blur)="logValidationErrors()" class="col-md-10 form-control-sm">        </div>        <div class="offset-2">          <label id="phone" class="text-danger" for="phone" [hidden]="!formErrors.phone">{{ formErrors.phone}}</label>        </div>      </div>      <div class="col-md-6">        <div class="form-group">          <label class="col-md-2" [ngClass]="{\'text-danger\' : formErrors.email}" for="email">Mail</label>          <input id="email" formControlName="email" type="text" [ngClass]="{\'error\' : formErrors.email}"            (blur)="logValidationErrors()" class="col-md-10 form-control-sm">        </div>        <div class="offset-2">          <label id="email" class="text-danger" for="email" [hidden]="!formErrors.email">{{ formErrors.email}}</label>        </div>      </div>      <div class="col-md-6">        <div class="form-group">          <label class="col-md-2" [ngClass]="{\'text-danger\' : formErrors.web_site}" for="web_site">Web</label>          <input id="web_site" formControlName="web_site" type="text" [ngClass]="{\'error\' : formErrors.web_site}"            (blur)="logValidationErrors()" class="col-md-10 form-control-sm">        </div>        <div class="offset-2">          <label id="web_site" class="text-danger" for="web_site" [hidden]="!formErrors.web_site">{{            formErrors.web_site}}</label>        </div>      </div>      <div class="col-md-6">        <div class="form-group {{ errors.address ? \'has-error\' : \'\' }} ">          <label class="col-md-2 pl-0" for="address">Addresse</label>          <input id="address" formControlName="address" type="text" class="col-md-10 form-control-sm">        </div>        <label class="error pl-2" for="address" [hidden]="!errors.address"> {{errors.address}}</label>      </div>    </div>    <hr class="hr-line-solid">    <div class="col-md-12">      <div class="form-group {{ errors.localisation ? \'has-error\' : \'\' }} ">        <label class="col-md-2" for="localisation">localisation</label>        <input id="localisation" formControlName="localisation" type="text" class="col-md-10 form-control-sm">      </div>      <label class="error pl-2" for="localisation" [hidden]="!errors.localisation"> {{errors.localisation}}</label>    </div>  </div>  <div class="modal-footer">    <button type="button" class="btn btn-default" (click)="onDecline()">Annuler</button>    <button type="submit" class="btn " [ngClass]="{ \'btn-primary\' : !edit, \'btn-warning\' : edit }"      [disabled]="institutionForm.invalid">      {{SubmitBtnTitle}}    </button>  </div></form></div>'
+    var COMPONENTS = [{'name': 'AdminComponent', 'selector': 'app-admin'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ConfirmModalComponent', 'selector': 'app-confirm-modal'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'InstitutionCategoryComponent', 'selector': 'app-institution-category'},{'name': 'InstitutionComponent', 'selector': 'app-institution'},{'name': 'InstitutionInfoComponent', 'selector': 'app-institution-info'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MapsComponent', 'selector': 'app-maps'},{'name': 'ModalFormInstitutionCategoryComponent', 'selector': 'app-modal-form-institution-category'},{'name': 'ModalFormInstitutionComponent', 'selector': 'app-modal-form-institution'},{'name': 'NavBarComponent', 'selector': 'app-nav-bar'},{'name': 'NavBarTopComponent', 'selector': 'app-nav-bar-top'},{'name': 'NavLeftComponent', 'selector': 'app-nav-left'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PersonComponent', 'selector': 'app-person'},{'name': 'PersonsCategoryComponent', 'selector': 'app-persons-category'},{'name': 'RequestResetComponent', 'selector': 'app-request-reset'},{'name': 'ResponseResetComponent', 'selector': 'app-response-reset'},{'name': 'SignupComponent', 'selector': 'app-signup'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'ModalFormInstitutionComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'ModalFormInstitutionComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

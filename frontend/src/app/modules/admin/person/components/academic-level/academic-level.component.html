@@ -1,0 +1,92 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+  <div class="col-lg-10">
+    <h2>Niveaux Academiques</h2>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a [routerLink]="['/administrateur']">Page d'accueil</a>
+      </li>
+      <li class="breadcrumb-item active">
+        <a [routerLink]="['']">Niveaux Academiques</a>
+      </li>
+
+    </ol>
+  </div>
+  <div class="col-lg-2">
+
+  </div>
+</div>
+
+<div class="wrapper wrapper-content animated fadeInRight ecommerce ">
+
+  <button (click)="openModalFormAcademicLevel()" type="button"
+    class="btn btn-block btn-outline btn-primary m-b-md  ">Nouvelle</button>
+
+
+  <div class="ibox-content m-b-xs   border-bottom">
+    <div class="row m-t-md">
+
+      <div class="col-sm-6">
+        <div class="form-group row">
+          <label class="col-lg-2 col-form-label text-right pr-0">Afficher</label>
+          <div class="col-lg-4">
+            <select class="form-control  " name="perPage" [(ngModel)]="perPage">
+              <option value=5 selected>5</option>
+              <option value=10>10</option>
+              <option value=25>25</option>
+              <option value=50>50</option>
+              <option value=100>100</option>
+            </select>
+          </div>
+          <label class="col-lg-2 col-form-label text-left pl-0">Element</label>
+
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group">
+          <input type="text" placeholder="Recherche..." class="form-control">
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+  </div>
+
+
+  <div class="row">
+    <div class="col-lg-12">
+
+
+      <ngx-datatable class="material striped" [sortType]="'single'" [reorderable]="false" [rows]="rows"
+        [columnMode]="'force'" [headerHeight]="50" [footerHeight]="50" [rowHeight]="50" [messages]="tableMessages"
+        [limit]="perPage" [selected]="selected" [selectionType]="'multi'" (activate)="onActivate($event)"
+        (select)='onSelect($event)' [loadingIndicator]="loadingIndicator">
+        <ngx-datatable-column name="ID"></ngx-datatable-column>
+        <ngx-datatable-column name="NAME"></ngx-datatable-column>
+        <ngx-datatable-column name="ACTIONS" headerClass="text-center" cellClass="text-center">
+          <ng-template ngx-datatable-cell-template let-row="row" let-rowIndex='rowIndex'>
+            <div class="btn-group">
+              <!-- <button (click)="goToAcademicLevelDetails(row.id)" class="btn-info btn btn-xs">Voir</button> -->
+              <button (click)="openModalFormAcademicLevel(row.id)" class="btn-warning btn btn-xs">Editer</button>
+              <button (click)="onDelete(row.id)" class="btn-danger btn btn-xs">Supprimer</button>
+            </div>
+          </ng-template>
+        </ngx-datatable-column>
+      </ngx-datatable>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+</div>

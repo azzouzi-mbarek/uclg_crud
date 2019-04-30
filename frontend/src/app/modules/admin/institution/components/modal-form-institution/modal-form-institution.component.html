@@ -1,0 +1,205 @@
+<div class="modal-header" [ngClass]="{ 'bg-primary' : !edit, 'bg-warning' : edit }">
+  <h4 class="modal-title  ">{{title}}</h4>
+  <button type="button" class="close pull-right" aria-label="Close" (click)="onDecline()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<form [formGroup]="institutionForm" (ngSubmit)="onSubmit()">
+  <div class="modal-body">
+    <div class="row">
+
+
+      <div class="col-md-6">
+        <div class="form-group">
+
+          <label class="col-md-3 required" [ngClass]="{'text-danger' : formErrors.name}" for="name"> Nom</label>
+
+          <input id="name" formControlName="name" type="text" class="col-md-9 form-control-sm"
+            [ngClass]="{'error' : formErrors.name}" (blur)="logValidationErrors()">
+
+          <div class="offset-3">
+            <label id="nom" class="text-danger" for="name" [hidden]="!formErrors.name">{{ formErrors.name}}</label>
+          </div>
+
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6">
+        <div class="form-group">
+          <label class="col-md-2 pl-0" for="acronym" [ngClass]="{'text-danger' : formErrors.acronym}">Acronyme</label>
+          <input id="acronym" formControlName="acronym" type="text" class="col-md-10 form-control-sm"
+            [ngClass]="{'error' : formErrors.acronym}" (blur)="logValidationErrors()">
+          <div class="offset-2">
+            <label id="acronym" class="text-danger" for="acronym" [hidden]="!formErrors.acronym">{{
+              formErrors.acronym}}</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12" formGroupName="category">
+        <div class="form-group">
+          <label class="col-md-2 required" for="category_id" [ngClass]="{'text-danger' : formErrors.category_id}">
+            Catégorie</label>
+
+          <select id="category_id" formControlName="category_id" class="col-md-7 form-control-sm"
+            [ngClass]="{'error' : formErrors.category_id}" (blur)="logValidationErrors()">
+            <option value='' disabled selected>Sélectionnez catégorie</option>
+            <option *ngFor="let category of categories" value={{category.id}}>{{ category.name}}</option>
+          </select>
+
+
+
+          <button (click)="openModalFormInstitutionCategory()" type="button"
+            class="btn btn-primary btn-xs  float-right">Ajouter
+            Catégorie</button>
+          <div class="offset-2">
+            <label class="text-danger" for="category_id" [hidden]="!formErrors.category_id">
+              {{formErrors.category_id}}</label>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-12">
+        <div class="form-group row mr-0 ml-0  ">
+          <label class="col-sm-2  " for="description">Description</label>
+          <textarea rows="3" id="description" formControlName="description" class="col-md-10 form-control "></textarea>
+          <label class="error pl-2" for="description" [hidden]="!errors.description"> {{errors.description}}</label>
+        </div>
+      </div>
+    </div>
+
+
+    <hr class="hr-line-solid">
+    <div class="row">
+
+
+      <div class="col-md-6">
+        <div class="form-group ">
+          <label class="col-md-5" [ngClass]="{'text-danger' : formErrors.foundation_year}"
+            for="foundation_year">Foundation
+            year</label>
+          <input id="foundation_year" formControlName="foundation_year" type="text" class="col-md-7 form-control-sm">
+        </div>
+        <div class="offset-5">
+          <label id="foundation_year" class="text-danger" for="foundation_year" [hidden]="!formErrors.foundation_year">{{
+            formErrors.foundation_year}}</label>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="form-group {{ errors.country_seat ? 'has-error' : '' }}">
+          <label class="col-md-5" for="country_seat">Country seat</label>
+          <input id="country_seat" formControlName="country_seat" type="text" class="col-md-7 form-control-sm">
+          <label class="error pl-2" for="country_seat" [hidden]="!errors.country_seat"> {{errors.country_seat}}</label>
+        </div>
+      </div>
+    </div>
+
+    <hr class="hr-line-solid">
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="form-group {{ errors.organe_tutelle ? 'has-error' : '' }} ">
+          <label class="col-md-3" for="organe_tutelle">Organe tutelle</label>
+          <input id="organe_tutelle" formControlName="organe_tutelle" type="text" class="col-md-9 form-control-sm">
+        </div>
+        <label class="error pl-2" for="organe_tutelle" [hidden]="!errors.organe_tutelle">
+          {{errors.organe_tutelle}}</label>
+      </div>
+
+      <div class="col-md-12">
+        <div class="form-group {{ errors.areas_intervention ? 'has-error' : '' }} ">
+          <label class="col-md-3" for="areas_intervention">Areas intervention</label>
+          <input id="areas_intervention" formControlName="areas_intervention" type="text"
+            class="col-md-9 form-control-sm">
+        </div>
+        <label class="error pl-2" for="areas_intervention" [hidden]="!errors.areas_intervention">
+          {{errors.areas_intervention}}</label>
+      </div>
+
+      <div class="col-md-12">
+        <div class="form-group {{ errors.target_beneficiary ? 'has-error' : '' }} ">
+          <label class="col-md-3" for="target_beneficiary">Target beneficiary</label>
+          <input id="target_beneficiary" formControlName="target_beneficiary" type="text"
+            class="col-md-9 form-control-sm">
+        </div>
+        <label class="error pl-2" for="target_beneficiary" [hidden]="!errors.target_beneficiary">
+          {{errors.target_beneficiary}}</label>
+      </div>
+    </div>
+
+
+    <hr class="hr-line-solid">
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label class="col-md-2" [ngClass]="{'text-danger' : formErrors.phone}" for="phone">Phone</label>
+          <input id="phone" formControlName="phone" type="text" [ngClass]="{'error' : formErrors.phone}"
+            (blur)="logValidationErrors()" class="col-md-10 form-control-sm">
+        </div>
+        <div class="offset-2">
+          <label id="phone" class="text-danger" for="phone" [hidden]="!formErrors.phone">{{ formErrors.phone}}</label>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="form-group">
+          <label class="col-md-2" [ngClass]="{'text-danger' : formErrors.email}" for="email">Mail</label>
+          <input id="email" formControlName="email" type="text" [ngClass]="{'error' : formErrors.email}"
+            (blur)="logValidationErrors()" class="col-md-10 form-control-sm">
+        </div>
+        <div class="offset-2">
+          <label id="email" class="text-danger" for="email" [hidden]="!formErrors.email">{{ formErrors.email}}</label>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="form-group">
+          <label class="col-md-2" [ngClass]="{'text-danger' : formErrors.web_site}" for="web_site">Web</label>
+          <input id="web_site" formControlName="web_site" type="text" [ngClass]="{'error' : formErrors.web_site}"
+            (blur)="logValidationErrors()" class="col-md-10 form-control-sm">
+        </div>
+        <div class="offset-2">
+          <label id="web_site" class="text-danger" for="web_site" [hidden]="!formErrors.web_site">{{
+            formErrors.web_site}}</label>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="form-group {{ errors.address ? 'has-error' : '' }} ">
+          <label class="col-md-2 pl-0" for="address">Addresse</label>
+          <input id="address" formControlName="address" type="text" class="col-md-10 form-control-sm">
+        </div>
+        <label class="error pl-2" for="address" [hidden]="!errors.address"> {{errors.address}}</label>
+      </div>
+    </div>
+
+    <hr class="hr-line-solid">
+
+    <div class="col-md-12">
+      <div class="form-group {{ errors.localisation ? 'has-error' : '' }} ">
+        <label class="col-md-2" for="localisation">localisation</label>
+        <input id="localisation" formControlName="localisation" type="text" class="col-md-10 form-control-sm">
+      </div>
+      <label class="error pl-2" for="localisation" [hidden]="!errors.localisation"> {{errors.localisation}}</label>
+    </div>
+
+  </div>
+
+
+  <div class="modal-footer">
+
+    <button type="button" class="btn btn-default" (click)="onDecline()">Annuler</button>
+    <button type="submit" class="btn " [ngClass]="{ 'btn-primary' : !edit, 'btn-warning' : edit }"
+      [disabled]="institutionForm.invalid">
+      {{SubmitBtnTitle}}
+    </button>
+
+  </div>
+</form>

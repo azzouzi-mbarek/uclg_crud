@@ -1,0 +1,32 @@
+ 
+
+type Region { 
+    id: ID!
+    name: String!
+    created_at: DateTime
+    updated_at: DateTime
+    countries: [Country]
+    }
+
+ 
+extend type Query    {
+    regions : [Region]   @field(resolver : "App\\Http\\GraphQL\\Queries\\RegionQueries@regions")
+    region(id : ID! @eq) : Region @find 
+    regionByName(name: String @eq) : [Region] @all
+}
+
+
+extend type Mutation   {
+
+     createRegion(
+         name: String @rules(apply : ["required"])
+         ) : Region @create 
+
+       updateRegion(
+           id: ID! 
+           name: String
+       ): Region @update
+
+    deleteRegion(id:ID!) : Region @delete
+}
+ 

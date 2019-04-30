@@ -1,0 +1,12 @@
+{
+  "projects": {
+    "uclg": {
+      "schemaPath": "./api/routes/graphql/schema.graphql",
+      "extensions": {
+        "endpoints": {
+          "dev": "http://192.168.33.20/graphql"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+# type Level { 
+#     id: ID!
+#     name:string!
+#     created_at: DateTime
+#     updated_at: DateTime
+#     events: [Event] @hasMany
+
+# }
+
+# type Event{
+#     id: ID!
+#     name: String
+#     type: String
+#     date: Date
+#     description: string
+#     fils: string
+#     created_at: DateTime
+#     updated_at: DateTime
+#     level: Level @belongsTo
+
+# }
+
+# extend type Query    {
+#     levels: [Level] @all
+#     level(id: ID @eq): Level @find
+#    eventByName(name: String @eq): [Event] @all
+#     events: [Event] @all
+#     event(id: ID @eq): Event @find
+# }
+
+# input LevelInput {
+    
+#     name: String @rules(apply : ["required" , "unique:levels"])
+
+
+    
+# }
+
+# extend type Mutation   {
+
+#     createLevel(
+#         name: String @rules(apply: ["required", "unique:levels,name"])
+#     ): Level @create
+
+#     updateLevel(
+#         id: ID @rules(apply: ["required"])
+#         name: String @rules(apply: ["required", "unique:levels,name"])
+#     ): Level @update
+
+#     deleteLevel(
+#         id: ID! @rules(apply: ["required"])
+#     ): Level @delete
+
+#      createPerson(
+#         first_name: String @rules(apply : ["required"])
+#         last_name: String @rules(apply : ["required"])
+#         image_url: String  @rules(apply : ["nullable" ])
+#         sex: String  @rules(apply : ["nullable" ])
+#         birthday: Date  @rules(apply : ["nullable" ])
+#         profession: String  @rules(apply : ["nullable" ])
+#         nationality: String  @rules(apply : ["nullable" ])
+#         study_area: String  @rules(apply : ["nullable" ])
+#         short_biography: String  @rules(apply : ["nullable" ])
+#         email: String  @rules(apply : ["nullable" ])
+#         number_phone: String  @rules(apply : ["nullable" ])
+#         academic_level_id: Int  @rules(apply : ["nullable" ])
+#      ) : Person @create 
+
+
+#     updatePerson(
+#         id: ID @rules(apply: ["required"])
+#         first_name: String @rules(apply : ["required"])
+#         last_name: String @rules(apply : ["required"])
+#          image_url: String  @rules(apply : ["nullable" ])
+#         sex: String  @rules(apply : ["nullable" ])
+#         birthday: Date  @rules(apply : ["nullable" ])
+#         profession: String  @rules(apply : ["nullable" ])
+#         nationality: String  @rules(apply : ["nullable" ])
+#         study_area: String  @rules(apply : ["nullable" ])
+#         short_biography: String  @rules(apply : ["nullable" ])
+#         email: String  @rules(apply : ["nullable" ])
+#         number_phone: String  @rules(apply : ["nullable" ])
+#         academic_level_id: Int  @rules(apply : ["nullable" ])
+#        ): Person @update
+
+#     deletePerson(
+#         id:ID! @rules(apply:["required"])
+#         ) : Person @delete
+# }

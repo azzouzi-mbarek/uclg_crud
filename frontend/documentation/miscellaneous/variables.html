@@ -1,0 +1,1309 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>frontend documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/vagrant.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">frontend documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content miscellaneous-variables">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Miscellaneous</li>
+  <li>Variables</li>
+</ol>
+
+<section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <ul class="index-list">
+                        <li>
+                            <a href="#CATEGORY_QUERY" title="src/app/core/queries/institutionQueries.ts"><b>CATEGORY_QUERY</b>&nbsp;&nbsp;&nbsp;(src/.../institutionQueries.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#DELETE_INSTITUTION_CATEGORY_MUTATION" title="src/app/core/queries/institutionQueries.ts"><b>DELETE_INSTITUTION_CATEGORY_MUTATION</b>&nbsp;&nbsp;&nbsp;(src/.../institutionQueries.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#DELETE_INSTITUTION_MUTATION" title="src/app/core/queries/institutionQueries.ts"><b>DELETE_INSTITUTION_MUTATION</b>&nbsp;&nbsp;&nbsp;(src/.../institutionQueries.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#environment" title="src/environments/environment.ts"><b>environment</b>&nbsp;&nbsp;&nbsp;(src/.../environment.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#environment" title="src/environments/environment.prod.ts"><b>environment</b>&nbsp;&nbsp;&nbsp;(src/.../environment.prod.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#errorLink" title="src/app/graphql.module.ts"><b>errorLink</b>&nbsp;&nbsp;&nbsp;(src/.../graphql.module.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#INSTITUTION_CATEGORIES_QUERY" title="src/app/core/queries/institutionQueries.ts"><b>INSTITUTION_CATEGORIES_QUERY</b>&nbsp;&nbsp;&nbsp;(src/.../institutionQueries.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#INSTITUTION_QUERY" title="src/app/core/queries/institutionQueries.ts"><b>INSTITUTION_QUERY</b>&nbsp;&nbsp;&nbsp;(src/.../institutionQueries.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#INSTITUTIONS_QUERY" title="src/app/core/queries/institutionQueries.ts"><b>INSTITUTIONS_QUERY</b>&nbsp;&nbsp;&nbsp;(src/.../institutionQueries.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#jQuery" title="src/app/modules/admin/layouts/components/nav-bar-top/nav-bar-top.component.ts"><b>jQuery</b>&nbsp;&nbsp;&nbsp;(src/.../nav-bar-top.component.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#jQuery" title="src/app/shared/helpers/app.helpers.ts"><b>jQuery</b>&nbsp;&nbsp;&nbsp;(src/.../app.helpers.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#jQuery" title="src/app/modules/admin/layouts/components/nav-left/nav-left.component.ts"><b>jQuery</b>&nbsp;&nbsp;&nbsp;(src/.../nav-left.component.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#LOGIN_QUERY" title="src/app/core/queries/authQueries.ts"><b>LOGIN_QUERY</b>&nbsp;&nbsp;&nbsp;(src/.../authQueries.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#MUTATION_CREATE_ACADEMIC_LEVEL" title="src/app/core/queries/personQueries.ts"><b>MUTATION_CREATE_ACADEMIC_LEVEL</b>&nbsp;&nbsp;&nbsp;(src/.../personQueries.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#MUTATION_CREATE_INSTITUTION" title="src/app/core/queries/institutionQueries.ts"><b>MUTATION_CREATE_INSTITUTION</b>&nbsp;&nbsp;&nbsp;(src/.../institutionQueries.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#MUTATION_CREATE_INSTITUTION_CATEGORY" title="src/app/core/queries/institutionQueries.ts"><b>MUTATION_CREATE_INSTITUTION_CATEGORY</b>&nbsp;&nbsp;&nbsp;(src/.../institutionQueries.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#MUTATION_CREATE_PERSON" title="src/app/core/queries/personQueries.ts"><b>MUTATION_CREATE_PERSON</b>&nbsp;&nbsp;&nbsp;(src/.../personQueries.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#MUTATION_DELETE_ACADEMIC_LEVEL" title="src/app/core/queries/personQueries.ts"><b>MUTATION_DELETE_ACADEMIC_LEVEL</b>&nbsp;&nbsp;&nbsp;(src/.../personQueries.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#MUTATION_DELETE_PERSON" title="src/app/core/queries/personQueries.ts"><b>MUTATION_DELETE_PERSON</b>&nbsp;&nbsp;&nbsp;(src/.../personQueries.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#MUTATION_UPDATE_ACADEMIC_LEVEL" title="src/app/core/queries/personQueries.ts"><b>MUTATION_UPDATE_ACADEMIC_LEVEL</b>&nbsp;&nbsp;&nbsp;(src/.../personQueries.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#MUTATION_UPDATE_INSTITUTION" title="src/app/core/queries/institutionQueries.ts"><b>MUTATION_UPDATE_INSTITUTION</b>&nbsp;&nbsp;&nbsp;(src/.../institutionQueries.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#MUTATION_UPDATE_INSTITUTION_CATEGORY" title="src/app/core/queries/institutionQueries.ts"><b>MUTATION_UPDATE_INSTITUTION_CATEGORY</b>&nbsp;&nbsp;&nbsp;(src/.../institutionQueries.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#MUTATION_UPDATE_PERSON" title="src/app/core/queries/personQueries.ts"><b>MUTATION_UPDATE_PERSON</b>&nbsp;&nbsp;&nbsp;(src/.../personQueries.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#PERSON_QUERY" title="src/app/core/queries/personQueries.ts"><b>PERSON_QUERY</b>&nbsp;&nbsp;&nbsp;(src/.../personQueries.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#PERSONS_QUERY" title="src/app/core/queries/personQueries.ts"><b>PERSONS_QUERY</b>&nbsp;&nbsp;&nbsp;(src/.../personQueries.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#QUERY_ACADEMIC_LEVEL" title="src/app/core/queries/personQueries.ts"><b>QUERY_ACADEMIC_LEVEL</b>&nbsp;&nbsp;&nbsp;(src/.../personQueries.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#QUERY_ACADEMIC_LEVELS" title="src/app/core/queries/personQueries.ts"><b>QUERY_ACADEMIC_LEVELS</b>&nbsp;&nbsp;&nbsp;(src/.../personQueries.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#SIGNUP_QUERY" title="src/app/core/queries/authQueries.ts"><b>SIGNUP_QUERY</b>&nbsp;&nbsp;&nbsp;(src/.../authQueries.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#uri" title="src/app/graphql.module.ts"><b>uri</b>&nbsp;&nbsp;&nbsp;(src/.../graphql.module.ts)</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    <h3>src/app/core/queries/institutionQueries.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="CATEGORY_QUERY"></a>
+                        <span class="name">
+                            <b>
+                            CATEGORY_QUERY</b>
+                            <a href="#CATEGORY_QUERY"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>gql&#x60;
+query category($id: ID!) {
+  categoryById(id : $id){
+    id
+    name
+  }
+} &#x60;</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="DELETE_INSTITUTION_CATEGORY_MUTATION"></a>
+                        <span class="name">
+                            <b>
+                            DELETE_INSTITUTION_CATEGORY_MUTATION</b>
+                            <a href="#DELETE_INSTITUTION_CATEGORY_MUTATION"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>gql&#x60;
+mutation deleteInstitutionCategory($id: ID!){
+  deleteInstitutionCategory(id: $id){
+    id
+    name
+  }
+} &#x60;</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="DELETE_INSTITUTION_MUTATION"></a>
+                        <span class="name">
+                            <b>
+                            DELETE_INSTITUTION_MUTATION</b>
+                            <a href="#DELETE_INSTITUTION_MUTATION"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>gql&#x60;
+mutation deleteInstitution($id: ID!){
+  deleteInstitution(id: $id){
+    id
+    name
+  }
+} &#x60;</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="INSTITUTION_CATEGORIES_QUERY"></a>
+                        <span class="name">
+                            <b>
+                            INSTITUTION_CATEGORIES_QUERY</b>
+                            <a href="#INSTITUTION_CATEGORIES_QUERY"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>gql&#x60;
+query institutionCategories{
+  institutionCategories{
+    id
+    name
+  }
+} &#x60;</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="INSTITUTION_QUERY"></a>
+                        <span class="name">
+                            <b>
+                            INSTITUTION_QUERY</b>
+                            <a href="#INSTITUTION_QUERY"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>gql&#x60;
+  query institution($id:ID!) {
+  institution(id :$id){
+    id
+    name
+    logo
+    acronym
+    description
+    foundation_year
+    country_seat
+    organe_tutelle
+    areas_intervention
+    target_beneficiary
+    web_site
+    email
+    phone
+    address
+    localisation
+    category {
+      id
+      name
+    }
+  }
+  }&#x60;</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="INSTITUTIONS_QUERY"></a>
+                        <span class="name">
+                            <b>
+                            INSTITUTIONS_QUERY</b>
+                            <a href="#INSTITUTIONS_QUERY"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>gql&#x60;
+  query institutions{
+  institutions{
+     id
+    name
+    logo
+    acronym
+    description
+    foundation_year
+    country_seat
+    organe_tutelle
+    areas_intervention
+    target_beneficiary
+    web_site
+    email
+    phone
+    address
+    localisation
+    category {
+      id
+      name
+    }
+  }
+  }&#x60;</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="MUTATION_CREATE_INSTITUTION"></a>
+                        <span class="name">
+                            <b>
+                            MUTATION_CREATE_INSTITUTION</b>
+                            <a href="#MUTATION_CREATE_INSTITUTION"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>gql&#x60;
+    mutation CreateInstitution(
+        $name:String ,
+        $acronym:String ,
+        $description: String,
+        $foundation_year:Int,
+        $country_seat: String,
+        $organe_tutelle: String,
+        $areas_intervention: String,
+        $target_beneficiary: String,
+        $phone: String,
+        $email: String,
+        $web_site: String,
+        $address: String,
+        $localisation: String,
+        $institution_category_id: Int,
+       ){
+      CreateInstitution(
+        name: $name ,
+        acronym:$acronym ,
+        description: $description,
+        foundation_year  :  $foundation_year ,
+        country_seat  : $country_seat,
+        organe_tutelle : $organe_tutelle ,
+        areas_intervention : $areas_intervention,
+        target_beneficiary  :  $target_beneficiary ,
+        phone : $phone ,
+        email: $email ,
+        web_site  : $web_site ,
+        address :$address ,
+        localisation :  $localisation ,
+        institution_category_id : $institution_category_id ,
+        ){
+          id
+    name
+    logo
+    acronym
+    description
+    foundation_year
+    country_seat
+    organe_tutelle
+    areas_intervention
+    target_beneficiary
+    web_site
+    email
+    phone
+    address
+    localisation
+    category {
+      id
+      name
+    }
+      }
+    }
+  &#x60;</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="MUTATION_CREATE_INSTITUTION_CATEGORY"></a>
+                        <span class="name">
+                            <b>
+                            MUTATION_CREATE_INSTITUTION_CATEGORY</b>
+                            <a href="#MUTATION_CREATE_INSTITUTION_CATEGORY"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>gql&#x60;
+mutation CreateInstitutionCategory($name: String){
+  CreateInstitutionCategory(name: $name){
+    id
+    name
+  }
+}
+&#x60;</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="MUTATION_UPDATE_INSTITUTION"></a>
+                        <span class="name">
+                            <b>
+                            MUTATION_UPDATE_INSTITUTION</b>
+                            <a href="#MUTATION_UPDATE_INSTITUTION"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>gql&#x60;
+mutation UpdateInstitution(
+        $id: ID!,
+        $name:String ,
+        $acronym:String ,
+        $description: String,
+        $foundation_year:Int,
+        $country_seat: String,
+        $organe_tutelle: String,
+        $areas_intervention: String,
+        $target_beneficiary: String,
+        $phone: String,
+        $email: String,
+        $web_site: String,
+        $address: String,
+        $localisation: String,
+        $institution_category_id: Int,
+  ){
+  UpdateInstitution(
+        id: $id,
+        name: $name ,
+        acronym:$acronym ,
+        description: $description,
+        foundation_year  :  $foundation_year ,
+        country_seat  : $country_seat,
+        organe_tutelle : $organe_tutelle ,
+        areas_intervention : $areas_intervention,
+        target_beneficiary  :  $target_beneficiary ,
+        phone : $phone ,
+        email: $email ,
+        web_site  : $web_site ,
+        address :$address ,
+        localisation :  $localisation ,
+        institution_category_id : $institution_category_id ,
+    ){
+    id
+    name
+    logo
+    acronym
+    description
+    foundation_year
+    country_seat
+    organe_tutelle
+    areas_intervention
+    target_beneficiary
+    web_site
+    email
+    phone
+    address
+    localisation
+    category {
+      id
+      name
+    }
+  }
+}
+&#x60;</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="MUTATION_UPDATE_INSTITUTION_CATEGORY"></a>
+                        <span class="name">
+                            <b>
+                            MUTATION_UPDATE_INSTITUTION_CATEGORY</b>
+                            <a href="#MUTATION_UPDATE_INSTITUTION_CATEGORY"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>gql&#x60;
+mutation UpdateInstitutionCategory($id: ID!, $name: String){
+  UpdateInstitutionCategory(id: $id, name: $name){
+    id
+    name
+  }
+}
+&#x60;</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/environments/environment.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="environment"></a>
+                        <span class="name">
+                            <b>
+                            environment</b>
+                            <a href="#environment"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+  production: false,
+  baseUrlGraphQL: &#x27;http://192.168.33.20/graphql&#x27;,
+  baseUrlRest: &#x27;http://192.168.33.20/api&#x27;
+}</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/environments/environment.prod.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="environment"></a>
+                        <span class="name">
+                            <b>
+                            environment</b>
+                            <a href="#environment"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+  production: true
+}</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/app/graphql.module.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="errorLink"></a>
+                        <span class="name">
+                            <b>
+                            errorLink</b>
+                            <a href="#errorLink"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>onError(({ graphQLErrors, networkError, operation, response }) &#x3D;&gt; {
+  if (graphQLErrors) {
+    graphQLErrors.map(({ extensions, message, locations, path }) &#x3D;&gt;
+      console.log(
+        &#x60;[GraphQL error]: Message: ${message}, Location: ${locations}, Path: ${path}&#x60;,
+      ),
+    );
+  }
+
+  if (networkError) {
+    console.log(&#x60;[Network error]: ${networkError}&#x60;);
+    // console.log(networkError);
+  }
+  if (operation) {
+    console.log(&#x60;[Operation error]: ${operation}&#x60;);
+
+
+
+  }
+  if (response) {
+    console.log(&#x60;[Response error]: ${response}&#x60;);
+    // console.log(response);
+  }
+
+
+})</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="uri"></a>
+                        <span class="name">
+                            <b>
+                            uri</b>
+                            <a href="#uri"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;http://192.168.33.20/graphql&#x27;</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/app/modules/admin/layouts/components/nav-bar-top/nav-bar-top.component.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="jQuery"></a>
+                        <span class="name">
+                            <b>
+                            jQuery</b>
+                            <a href="#jQuery"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/app/shared/helpers/app.helpers.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="jQuery"></a>
+                        <span class="name">
+                            <b>
+                            jQuery</b>
+                            <a href="#jQuery"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Inspinia js helpers:</p>
+<p>correctHeight() - fix the height of main wrapper
+detectBody() - detect windows size
+smoothlyMenu() - add smooth fade in/out on navigation show/hide</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/app/modules/admin/layouts/components/nav-left/nav-left.component.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="jQuery"></a>
+                        <span class="name">
+                            <b>
+                            jQuery</b>
+                            <a href="#jQuery"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/app/core/queries/authQueries.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="LOGIN_QUERY"></a>
+                        <span class="name">
+                            <b>
+                            LOGIN_QUERY</b>
+                            <a href="#LOGIN_QUERY"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>gql&#x60;
+  mutation login ($email :String!  , $password : String!){
+  login(email: $email, password: $password) {
+    user {
+      id
+      email
+    }
+    auth_token {
+      access_token
+      refresh_token
+      token_type
+      expires_in
+    }
+     error {
+      message
+    }
+  }
+}
+&#x60;</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="SIGNUP_QUERY"></a>
+                        <span class="name">
+                            <b>
+                            SIGNUP_QUERY</b>
+                            <a href="#SIGNUP_QUERY"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>gql&#x60;
+  mutation createUser ($name : String! ,$email :String!  , $password : String! , $password_confirmation : String!){
+  createUser(name : $name ,email: $email, password: $password , password_confirmation : $password_confirmation) {
+    auth_token {
+      access_token
+      token_type
+      expires_in
+    }
+  }
+}
+&#x60;</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/app/core/queries/personQueries.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="MUTATION_CREATE_ACADEMIC_LEVEL"></a>
+                        <span class="name">
+                            <b>
+                            MUTATION_CREATE_ACADEMIC_LEVEL</b>
+                            <a href="#MUTATION_CREATE_ACADEMIC_LEVEL"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>gql&#x60;
+    mutation createAcademicLevel(
+      $name:String,
+    $bac_level:String
+    ){
+      createAcademicLevel(name: $name, bac_level: $bac_level){
+        id
+        name
+        bac_level
+      }
+    }
+  &#x60;</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="MUTATION_CREATE_PERSON"></a>
+                        <span class="name">
+                            <b>
+                            MUTATION_CREATE_PERSON</b>
+                            <a href="#MUTATION_CREATE_PERSON"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>gql&#x60;
+    mutation createPerson(
+    $first_name:String,
+    $last_name:String,
+    $image_url:String,
+    $sex:String,
+    $birthday:Date,
+    $profession:String,
+    $nationality:String,
+    $study_area:String,
+    $short_biography:String,
+    $email:String,
+    $number_phone:String,
+    $academic_level_id: Int,
+
+    ){
+    
+    createPerson(
+    
+    first_name: $first_name,
+    last_name: $last_name,
+    sex: $sex
+    birthday:$birthday
+    profession: $profession
+    nationality: $nationality
+    study_area:$study_area
+    short_biography:$short_biography
+    email:$email
+    number_phone:$number_phone
+    academic_level_id:$academic_level_id
+     
+     ){
+      id
+      image_url
+      first_name
+      last_name
+      sex
+      birthday
+      profession
+      nationality
+      study_area
+      short_biography
+      email
+      number_phone
+      academicLevel{
+        id
+        name
+      }
+      }
+    }
+  &#x60;</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="MUTATION_DELETE_ACADEMIC_LEVEL"></a>
+                        <span class="name">
+                            <b>
+                            MUTATION_DELETE_ACADEMIC_LEVEL</b>
+                            <a href="#MUTATION_DELETE_ACADEMIC_LEVEL"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>gql&#x60;
+mutation deleteAcademicLevel($id:ID!){
+  deleteAcademicLevel(id: $id){
+    id
+    name
+    bac_level
+  }
+}
+&#x60;</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="MUTATION_DELETE_PERSON"></a>
+                        <span class="name">
+                            <b>
+                            MUTATION_DELETE_PERSON</b>
+                            <a href="#MUTATION_DELETE_PERSON"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>gql&#x60;
+mutation deletePerson($id:ID!){
+  deletePerson(id: $id){
+    id
+    first_name
+    last_name
+  }
+}
+&#x60;</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="MUTATION_UPDATE_ACADEMIC_LEVEL"></a>
+                        <span class="name">
+                            <b>
+                            MUTATION_UPDATE_ACADEMIC_LEVEL</b>
+                            <a href="#MUTATION_UPDATE_ACADEMIC_LEVEL"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>gql&#x60;
+mutation updateAcademicLevel($id:ID!,$name:String,$bac_level:String){
+  updateAcademicLevel(id:$id,name: $name, bac_level: $bac_level){
+    id
+    name
+    bac_level
+  }
+}&#x60;</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="MUTATION_UPDATE_PERSON"></a>
+                        <span class="name">
+                            <b>
+                            MUTATION_UPDATE_PERSON</b>
+                            <a href="#MUTATION_UPDATE_PERSON"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>gql&#x60;
+mutation updatePerson(
+  $id:ID!,
+  $first_name:String,
+  $last_name:String,
+    $image_url:String,
+    $sex:String,
+    $birthday:Date,
+    $profession:String,
+    $nationality:String,
+    $study_area:String,
+    $short_biography:String,
+    $email:String,
+    $number_phone:String,
+    $academic_level_id: Int,
+  ){
+  updatePerson(
+    id:$id,
+    first_name: $first_name,
+    last_name: $last_name,
+    sex: $sex
+    birthday:$birthday
+    profession: $profession
+    nationality: $nationality
+    study_area:$study_area
+    short_biography:$short_biography
+    email:$email
+    number_phone:$number_phone
+    academic_level_id:$academic_level_id
+     ){
+      id
+      image_url
+      first_name
+      last_name
+      sex
+      birthday
+      profession
+      nationality
+      study_area
+      short_biography
+      email
+      number_phone
+      academicLevel{
+        id
+        name
+      }
+  }
+}&#x60;</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="PERSON_QUERY"></a>
+                        <span class="name">
+                            <b>
+                            PERSON_QUERY</b>
+                            <a href="#PERSON_QUERY"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>gql&#x60;
+    query person($id:ID!) {
+      person(id :$id){
+          id
+          image_url
+          first_name
+          last_name
+          sex
+          birthday
+          profession
+          nationality
+          study_area
+          short_biography
+          email
+          number_phone
+          academicLevel{
+            id
+            name
+          }
+    }
+  }&#x60;</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="PERSONS_QUERY"></a>
+                        <span class="name">
+                            <b>
+                            PERSONS_QUERY</b>
+                            <a href="#PERSONS_QUERY"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>gql&#x60;
+  query persons{
+    persons{
+      id
+          image_url
+          first_name
+          last_name
+          sex
+          birthday
+          profession
+          nationality
+          study_area
+          short_biography
+          email
+          number_phone
+          academicLevel{
+            id
+            name
+          }
+  }
+  }&#x60;</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="QUERY_ACADEMIC_LEVEL"></a>
+                        <span class="name">
+                            <b>
+                            QUERY_ACADEMIC_LEVEL</b>
+                            <a href="#QUERY_ACADEMIC_LEVEL"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>gql&#x60;
+    query AcademicLevel($id:ID!) {
+      AcademicLevelId(id :$id){
+      id
+      name
+      bac_level
+    }
+  }&#x60;</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="QUERY_ACADEMIC_LEVELS"></a>
+                        <span class="name">
+                            <b>
+                            QUERY_ACADEMIC_LEVELS</b>
+                            <a href="#QUERY_ACADEMIC_LEVELS"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>gql&#x60;
+  query AcademicLevels{
+    AcademicLevels{
+    id
+    name
+    bac_level
+  }
+  }&#x60;</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'miscellaneous-variables';
+            var COMPODOC_CURRENT_PAGE_URL = 'variables.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

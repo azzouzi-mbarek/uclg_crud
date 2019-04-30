@@ -1,0 +1,35 @@
+<div class="navbar-wrapper" *ngIf="!auth_url.includes(router.url)">
+  <nav class=" navbar navbar-default navbar-static-top navbar-expand-md" role="navigation">
+    <div class="container">
+      <a><img height="50" width="240" src="assets/img/logo-ucgl.png" alt="UCLGA" class="img-fluid"></a>
+      <!-- <a routerLink="/landing/home"><img height="55" width="240" src="assets/img/logo-ucgl.png" alt="UCLGA"></a> -->
+
+      <div class="navbar-header page-scroll">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+          <i class="fa fa-bars"></i>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse justify-content-end" id="navbar">
+        <ul class="nav navbar-nav ">
+          <li><a class="nav-link text-uppercase" [routerLink]="['home']" routerLinkActive="active">HOME</a></li>
+          <li><a class="nav-link text-uppercase" routerLink="/landing/maps" routerLinkActive="active">MAPS</a></li>
+
+          <li><a class="nav-link text-uppercase" routerLink="/landing/repository"
+              routerLinkActive="active">répertoire</a></li>
+          <li><a class="nav-link text-uppercase" routerLink="">TRANSPARENCE</a>
+          </li>
+          <li><a class="nav-link text-uppercase" routerLink="">STATISTIQUES</a></li>
+          <!-- <li><a class="nav-link" pageScroll routerLinkActive="active" href="#partners">Partners</a></li> -->
+          <li><a class="nav-link text-uppercase" routerLinkActive="active">Contact</a></li>
+          <li *ngIf="loggedIn"><a class="nav-link   text-uppercase" routerLinkActive="active"
+              (click)="goToAdmin()">Admin</a></li>
+          <li *ngIf="!loggedIn"><a class="nav-link   text-uppercase" routerLinkActive="active"
+              routerLink="/login">Login</a></li>
+          <li *ngIf="!loggedIn"><a class="nav-link   text-uppercase" (click)="goToSignup()">SignUp</a></li>
+          <li *ngIf="loggedIn"><a class="nav-link   text-uppercase" (click)="logout($event)">Logout</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>

@@ -1,0 +1,98 @@
+<div class="wrapper wrapper-content">
+  <div class="row animated fadeInRight">
+    <div class="col-md-4">
+      <div class="ibox">
+        <div class="ibox-title">
+          <h5>{{ institution.name+' - ' + institution.acronym}} </h5>
+        </div>
+        <div>
+          <div class="ibox-content no-padding border-left-right">
+            <img alt="image" class="img-fluid" src="assets/img/institution.png">
+          </div>
+          <div class="ibox-content profile-content">
+            <strong> category</strong>
+            <p><i class="fa fa-map-marker"></i> {{ institution.address}}</p>
+            <h5>
+              A propos
+            </h5>
+            <p>
+              {{ institution.description}}
+            </p>
+            <div class="row  ">
+
+              <div class="feed-activity-list col-12">
+
+                <div class="feed-element">
+                  <div>
+                    <strong>Telephone :</strong>
+                    <div>{{ institution.phone}}</div>
+                  </div>
+                </div>
+
+                <div class="feed-element">
+                  <div>
+                    <strong>Web :</strong>
+                    <div>{{ institution.web_site}}</div>
+                  </div>
+                </div>
+                <div class="feed-element">
+                  <div>
+                    <strong>Email :</strong>
+                    <div>{{ institution.email}}</div>
+                  </div>
+                </div>
+
+                <div class="feed-element">
+                  <div>
+                    <strong>Creation :</strong>
+                    <div>{{ institution.foundation_year+' '+institution.country_seat}}</div>
+                  </div>
+                </div>
+
+
+
+
+              </div>
+            </div>
+
+            <div class="user-button">
+              <div class="row">
+                <div class="col-md-6">
+                  <button type="button" class="btn btn-primary btn-sm btn-block"><i class="fa fa-envelope"></i> Send
+                    Message</button>
+                </div>
+                <div class="col-md-6">
+                  <button type="button" class="btn btn-default btn-sm btn-block"><i class="fa fa-coffee"></i> Buy a
+                    coffee</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-8">
+
+      <ngx-datatable class="material striped" [sortType]="'single'" [reorderable]="false" [rows]="rows" [columnMode]="'force'"
+        [headerHeight]="50" [footerHeight]="50" [rowHeight]="80" [messages]="tableMessages" [limit]="perPage"
+        [loadingIndicator]="loadingIndicator" [selected]="selected" [selectionType]="'multi'">
+
+        <ngx-datatable-column name="NOM"></ngx-datatable-column>
+        <ngx-datatable-column prop="web_site" name="WEB"></ngx-datatable-column>
+        <ngx-datatable-column name="EMAIL"></ngx-datatable-column>
+        <ngx-datatable-column name="ACTIONS" headerClass="text-center" cellClass="text-center">
+          <ng-template ngx-datatable-cell-template let-row="row" let-rowIndex='rowIndex'>
+            <div class="btn-group">
+              <button class="btn btn-primary btn-xs">Info</button>
+              <button class="btn btn-warning btn-xs">Éditer</button>
+              <button class="btn btn-danger btn-xs">Supprimer</button>
+            </div>
+          </ng-template>
+        </ngx-datatable-column>
+      </ngx-datatable>
+
+    </div>
+  </div>
+
+</div>

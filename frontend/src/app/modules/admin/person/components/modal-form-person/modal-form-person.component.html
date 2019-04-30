@@ -1,0 +1,293 @@
+<div class="modal-header" [ngClass]="{ 'bg-primary' : !edit, 'bg-warning' : edit }">
+  <h4 class="modal-title pull-left">{{title}}</h4>
+  <button type="button" class="close pull-right" aria-label="Close" (click)="onDecline()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <form [formGroup]="personForm" (ngSubmit)="onSubmit()">
+    <div class="modal-body">
+      <div class="row">
+
+
+
+        <div class="col-lg-6">
+          <div class="form-group">
+            <label class="col-md-3 required" [ngClass]="{'text-danger' : formErrors.first_name}" for="first_name">
+              Nom</label>
+            <input id="first_name" type="text" class="col-md-9 form-control-sm" formControlName="first_name"
+              placeholder="Exemple: Mohamed" (blur)="logValidationErrors()"
+              [ngClass]="{'error' : formErrors.first_name}">
+          </div>
+          <div class="offset-3">
+            <label id="first_name" class="text-danger" for="first_name"
+              [hidden]="!formErrors.first_name">{{ formErrors.first_name}}</label>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6">
+          <div class="form-group ">
+            <label class="col-md-3" [ngClass]="{'text-danger' : formErrors.last_name}" for="last_name">
+              Prenom </label>
+            <input id="last_name" type="text" class="col-md-9 form-control-sm" formControlName="last_name"
+              placeholder="exemple: ali" (blur)="logValidationErrors()" [ngClass]="{'error' : formErrors.last_name}">
+          </div>
+          <div class="offset-3">
+            <label id="last_name" class="text-danger" for="last_name"
+              [hidden]="!formErrors.last_name">{{ formErrors.last_name}}</label>
+          </div>
+        </div>
+
+        <div class="col-lg-3 p-l">
+
+          <div class="form-group ">
+            <label class="radio-inline " [ngClass]="{'text-danger' : formErrors.sex}" for="sex">
+              <input id="sex" type="checkbox" required value="Male" formControlName="sex" (blur)="logValidationErrors()"
+                [ngClass]="{'error' : formErrors.sex}">
+              Homme
+            </label>
+            &nbsp;
+            &nbsp;
+
+            <label class="radio-inline" [ngClass]="{'text-danger' : formErrors.sex}" for="sex">
+              <input id="sex" type="checkbox" required value="Female" formControlName="sex"
+                (blur)="logValidationErrors()" [ngClass]="{'error' : formErrors.sex}">
+              Femme
+            </label>
+
+          </div>
+          <div class="offset-3">
+            <label id="sex" class="text-danger" for="sex" [hidden]="!formErrors.sex">{{ formErrors.sex}}</label>
+          </div>
+        </div>
+
+        <div class="col-lg-8">
+          <div class="form-group">
+            <label class="col-md-3" [ngClass]="{'text-danger' : formErrors.birthday}" for="birthday">
+              Date de naissance </label>
+            <input id="birthday" type="date" class="col-md-8 form-control-sm" placeholder="Date de naissance"
+              formControlName="birthday" (blur)="logValidationErrors()" [ngClass]="{'error' : formErrors.birthday}"
+              bsDatepicker>
+          </div>
+          <div class="offset-3">
+            <label id="birthday" class="text-danger" for="birthday"
+              [hidden]="!formErrors.birthday">{{ formErrors.birthday}}</label>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="form-group">
+            <label class="col-md-3" [ngClass]="{'text-danger' : formErrors.nationality}" for="nationality">
+              Nationalité </label>
+
+            <input id="nationality" type="text" class="col-md-8 form-control-sm" formControlName="nationality"
+              (blur)="logValidationErrors()" [ngClass]="{'error' : formErrors.nationality}">
+          </div>
+          <div class="offset-3">
+            <label id="nationality" class="text-danger" for="nationality"
+              [hidden]="!formErrors.nationality">{{ formErrors.nationality}}</label>
+          </div>
+        </div>
+
+
+
+
+        <div class="col-lg-12">
+          <div class="form-group">
+            <label class="col-md-3" [ngClass]="{'text-danger' : formErrors.email}" for="email">
+              E-mail </label>
+
+            <input id="email" type="email" class="col-md-8 form-control-sm" formControlName="email"
+              (blur)="logValidationErrors()" [ngClass]="{'error' : formErrors.email}">
+          </div>
+          <div class="offset-3">
+            <label id="email" class="text-danger" for="email" [hidden]="!formErrors.email">{{ formErrors.email}}</label>
+          </div>
+        </div>
+
+
+
+        <!-- <div class="col-md-12" formControlName="academicLevel">
+          <div class="form-group">
+            <label class="col-md-2 required" for="academic_level_id"
+              [ngClass]="{'text-danger' : formErrors.academic_level_id}">
+              Niveau Academique</label>
+
+            <select id="academic_level_id" formControlName="academic_level_id" class="col-md-7 form-control-sm"
+              [ngClass]="{'error' : formErrors.academic_level_id}" (blur)="logValidationErrors()" >
+              <option value='' disabled selected>Sélectionnez un Niveau Academique</option>
+              <option *ngFor="let academicLevel of academicLevels" value={{academicLevel.id}}>{{ academicLevel.name}}
+              </option>
+            </select>
+
+
+
+            <button (click)="openModalFormAcademicLevel()" type="button"
+              class="btn btn-primary btn-xs  float-right">Ajouter
+              Un Niveau Academique</button>
+            <div class="offset-2">
+              <label class="text-danger" for="academic_level_id" [hidden]="!formErrors.academic_level_id">
+                {{formErrors.academic_level_id}}</label>
+
+            </div>
+
+          </div>
+
+        </div> -->
+
+
+
+        <div class="col-lg-6">
+          <div class="form-group ">
+            <label class="col-md-3" [ngClass]="{'text-danger' : formErrors.study_area}" for="study_area">
+              Domaine d'etude </label>
+            <input id="study_area" type="text" class="col-md-8 form-control-sm" formControlName="study_area"
+              (blur)="logValidationErrors()" [ngClass]="{'error' : formErrors.study_area}">
+          </div>
+          <div class="offset-3">
+            <label id="study_area" class="text-danger" for="study_area"
+              [hidden]="!formErrors.study_area">{{ formErrors.study_area}}</label>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6">
+          <div class="form-group ">
+            <label class="col-md-3" [ngClass]="{'text-danger' : formErrors.number_phone}" for="number_phone">
+              Téléphone </label>
+            <input id="number_phone" type="text" class="col-md-8 form-control-sm" formControlName="number_phone"
+              (blur)="logValidationErrors()" [ngClass]="{'error' : formErrors.number_phone}">
+          </div>
+          <div class="offset-3">
+            <label id="number_phone" class="text-danger" for="number_phone"
+              [hidden]="!formErrors.number_phone">{{ formErrors.number_phone}}</label>
+          </div>
+        </div>
+
+        <div class="col-lg-12">
+          <div class="form-group ">
+            <label class="col-md-3" [ngClass]="{'text-danger' : formErrors.short_biography}" for="short_biography">
+              Bref Biographie </label>
+            <textarea id="short_biography" type="text" rows="3" class=" span6 form-control" placeholder="..."
+              formControlName="short_biography" (blur)="logValidationErrors()"
+              [ngClass]="{'error' : formErrors.short_biography}"></textarea>
+          </div>
+          <div class="offset-3">
+            <label id="short_biography" class="text-danger" for="short_biography"
+              [hidden]="!formErrors.short_biography">{{ formErrors.short_biography}}</label>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </form>
+</div>
+
+
+<div class="modal-footer">
+  <button type="button" class="btn btn-default" (click)="onDecline()">Annuler</button>
+  <button [disabled]="personForm.invalid" type="button" class="btn "
+    [ngClass]="{ 'btn-primary' : !edit, 'btn-warning' : edit }" (click)="onSubmit()">{{SubmitBtnTitle}}</button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="modal-header" [ngClass]="{ 'bg-primary' : !edit, 'bg-warning' : edit }">
+  <h4 class="modal-title pull-left">{{title}}</h4>
+  <button type="button" class="close pull-right" aria-label="Close" (click)="onDecline()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <form #Form="ngForm" (ngSubmit)="onSubmit()">
+    <div class="ibox-content">
+
+      <div class="form-group {{ errors.first_name ? 'has-error' : '' }} ">
+
+        <input id="first_name" type="text" class="form-control" name="first_name" [(ngModel)]="person.first_name"
+          placeholder="Nom">
+      </div>
+      <div class="alert alert-danger" [hidden]="!errors.first_name">
+        {{errors.first_name}}
+      </div>
+
+
+
+
+
+
+
+      
+
+
+
+
+      <div class="form-group {{ errors.academic_level ? 'has-error' : '' }} ">
+        <select id="academic_level" appSelectValidator="select" name="academic_level" [(ngModel)]="person.academic_level"
+          class="form-control" #academic_level="ngModel">
+          <option value="select">Niveau academique</option>
+          <option value="bac">bac</option>
+          <option value="bac+1">bac+1</option>
+          <option value="bac+2">Bac+2 </option>
+          <option value="bac+3">Bac+3 </option>
+          <option value="bac+4">Bac+4 </option>
+          <option value="bac+5">Bac+5</option>
+          <option value="bac+8">Bac+8</option>
+
+
+
+        </select>
+      </div>
+      <div class="alert alert-danger" [hidden]="!errors.academic_level">
+        {{errors.academic_level}}
+      </div>
+
+
+
+  
+
+     
+
+
+     
+
+
+
+
+    </div>
+  </form>
+</div>
+
+
+<div class="modal-footer">
+  <button type="button" class="btn btn-default" (click)="onDecline()">Annuler</button>
+  <button [disabled]="!Form.valid" type="button" class="btn " [ngClass]="{ 'btn-primary' : !edit, 'btn-warning' : edit }"
+    (click)="onSubmit()">{{SubmitBtnTitle}}</button>
+</div> -->

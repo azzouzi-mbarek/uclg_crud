@@ -1,0 +1,41 @@
+ 
+                                                                                                 
+type Country {
+    id: ID!
+    name: String!
+    iso_a3: String
+    iso_a2: String
+    iso_n3: String
+    description: String
+    capital: String
+    devise: String
+    indicatif_tele: String
+    drapeau_url: String
+    geom: String
+    region_id: Int!
+    created_at: DateTime
+    updated_at: DateTime
+    populations: [Country_population]  @hasMany
+}
+
+type Country_population { 
+    id: ID!
+    population: Int
+    year: Date 
+    country: Country @belongsTo
+}
+
+extend type Query     {
+    countries: [Country]   @all
+    country(id : ID @eq) : Country @find
+    country_populations: [Country_population] @all 
+    populationById(id : ID @eq): Country_population @find
+}   
+
+
+ 
+ 
+ 
+
+
+ 

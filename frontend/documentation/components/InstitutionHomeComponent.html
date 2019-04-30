@@ -1,0 +1,1495 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>frontend documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/vagrant.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">frontend documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>InstitutionHomeComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/modules/admin/institution/components/institution-home/institution-home.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-institution-home</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./institution-home.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./institution-home.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#bsModalRef">bsModalRef</a>
+                            </li>
+                            <li>
+                                <a href="#bsModalRefinfo">bsModalRefinfo</a>
+                            </li>
+                            <li>
+                                <a href="#bsModelConfirm">bsModelConfirm</a>
+                            </li>
+                            <li>
+                                <a href="#errors">errors</a>
+                            </li>
+                            <li>
+                                <a href="#initialState">initialState</a>
+                            </li>
+                            <li>
+                                <a href="#institution">institution</a>
+                            </li>
+                            <li>
+                                <a href="#institutionsList">institutionsList</a>
+                            </li>
+                            <li>
+                                <a href="#loadingIndicator">loadingIndicator</a>
+                            </li>
+                            <li>
+                                <a href="#logoUrl">logoUrl</a>
+                            </li>
+                            <li>
+                                <a href="#perPage">perPage</a>
+                            </li>
+                            <li>
+                                <a href="#rows">rows</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#table">table</a>
+                            </li>
+                            <li>
+                                <a href="#tableMessages">tableMessages</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#getInstitutions">getInstitutions</a>
+                            </li>
+                            <li>
+                                <a href="#goToInfoInstitution">goToInfoInstitution</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onDelete">onDelete</a>
+                            </li>
+                            <li>
+                                <a href="#openModal">openModal</a>
+                            </li>
+                            <li>
+                                <a href="#openModalFormInstitution">openModalFormInstitution</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(_institutionService: <a href="../injectables/InstitutionService.html">InstitutionService</a>, _modalService: BsModalService, _toaster: ToastrService, _router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, _route: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, _errorHandler: <a href="../injectables/ErrorHandlerService.html">ErrorHandlerService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/app/modules/admin/institution/components/institution-home/institution-home.component.ts:47</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>_institutionService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/InstitutionService.html" target="_self" >InstitutionService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_modalService</td>
+                                                  
+                                                        <td>
+                                                                    <code>BsModalService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_toaster</td>
+                                                  
+                                                        <td>
+                                                                    <code>ToastrService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_route</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_errorHandler</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ErrorHandlerService.html" target="_self" >ErrorHandlerService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getInstitutions"></a>
+                    <span class="name">
+                        <b>
+                            getInstitutions
+                        </b>
+                        <a href="#getInstitutions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getInstitutions()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="69"
+                            class="link-to-prism">src/app/modules/admin/institution/components/institution-home/institution-home.component.ts:69</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>get institutions</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="goToInfoInstitution"></a>
+                    <span class="name">
+                        <b>
+                            goToInfoInstitution
+                        </b>
+                        <a href="#goToInfoInstitution"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>goToInfoInstitution(id)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="152"
+                            class="link-to-prism">src/app/modules/admin/institution/components/institution-home/institution-home.component.ts:152</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="58"
+                            class="link-to-prism">src/app/modules/admin/institution/components/institution-home/institution-home.component.ts:58</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onDelete"></a>
+                    <span class="name">
+                        <b>
+                            onDelete
+                        </b>
+                        <a href="#onDelete"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onDelete(id)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="160"
+                            class="link-to-prism">src/app/modules/admin/institution/components/institution-home/institution-home.component.ts:160</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openModal"></a>
+                    <span class="name">
+                        <b>
+                            openModal
+                        </b>
+                        <a href="#openModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openModal(initialState)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="120"
+                            class="link-to-prism">src/app/modules/admin/institution/components/institution-home/institution-home.component.ts:120</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Opens modal</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>initialState</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openModalFormInstitution"></a>
+                    <span class="name">
+                        <b>
+                            openModalFormInstitution
+                        </b>
+                        <a href="#openModalFormInstitution"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openModalFormInstitution(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="91"
+                            class="link-to-prism">src/app/modules/admin/institution/components/institution-home/institution-home.component.ts:91</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Opens modal form institution</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>null</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="bsModalRef"></a>
+                        <span class="name">
+                            <b>
+                            bsModalRef</b>
+                            <a href="#bsModalRef"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>BsModalRef</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/modules/admin/institution/components/institution-home/institution-home.component.ts:37</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="bsModalRefinfo"></a>
+                        <span class="name">
+                            <b>
+                            bsModalRefinfo</b>
+                            <a href="#bsModalRefinfo"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>BsModalRef</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/modules/admin/institution/components/institution-home/institution-home.component.ts:38</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="bsModelConfirm"></a>
+                        <span class="name">
+                            <b>
+                            bsModelConfirm</b>
+                            <a href="#bsModelConfirm"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>BsModalRef</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/modules/admin/institution/components/institution-home/institution-home.component.ts:39</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="errors"></a>
+                        <span class="name">
+                            <b>
+                            errors</b>
+                            <a href="#errors"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/modules/admin/institution/components/institution-home/institution-home.component.ts:44</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="initialState"></a>
+                        <span class="name">
+                            <b>
+                            initialState</b>
+                            <a href="#initialState"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{}</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/app/modules/admin/institution/components/institution-home/institution-home.component.ts:47</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="institution"></a>
+                        <span class="name">
+                            <b>
+                            institution</b>
+                            <a href="#institution"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/Institution.html" target="_self" >Institution</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/modules/admin/institution/components/institution-home/institution-home.component.ts:41</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="institutionsList"></a>
+                        <span class="name">
+                            <b>
+                            institutionsList</b>
+                            <a href="#institutionsList"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/Institution.html" target="_self" >Institution[]</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/modules/admin/institution/components/institution-home/institution-home.component.ts:42</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="loadingIndicator"></a>
+                        <span class="name">
+                            <b>
+                            loadingIndicator</b>
+                            <a href="#loadingIndicator"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank" >Boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>true</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/modules/admin/institution/components/institution-home/institution-home.component.ts:27</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="logoUrl"></a>
+                        <span class="name">
+                            <b>
+                            logoUrl</b>
+                            <a href="#logoUrl"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;assets/img/camera.png&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/modules/admin/institution/components/institution-home/institution-home.component.ts:45</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="perPage"></a>
+                        <span class="name">
+                            <b>
+                            perPage</b>
+                            <a href="#perPage"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>5</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/modules/admin/institution/components/institution-home/institution-home.component.ts:29</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="rows"></a>
+                        <span class="name">
+                            <b>
+                            rows</b>
+                            <a href="#rows"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/modules/admin/institution/components/institution-home/institution-home.component.ts:28</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="table"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            table</b>
+                            <a href="#table"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>DatatableComponent</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(DatatableComponent)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/modules/admin/institution/components/institution-home/institution-home.component.ts:25</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="tableMessages"></a>
+                        <span class="name">
+                            <b>
+                            tableMessages</b>
+                            <a href="#tableMessages"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+    emptyMessage: &#x27;Aucune donnée à afficher&#x27;,
+    totalMessage: &#x27;total&#x27;
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/modules/admin/institution/components/institution-home/institution-home.component.ts:31</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, ViewChild } from &#x27;@angular/core&#x27;;
+import { ToastrService } from &#x27;ngx-toastr&#x27;;
+import { BsModalRef, BsModalService } from &#x27;ngx-bootstrap&#x27;;
+import { DatatableComponent } from &#x27;@swimlane/ngx-datatable&#x27;;
+
+import { Router, ActivatedRoute } from &#x27;@angular/router&#x27;;
+
+import { ModalFormInstitutionComponent } from &#x27;../modal-form-institution/modal-form-institution.component&#x27;;
+import { ConfirmModalComponent } from &#x27;src/app/shared&#x27;;
+import {
+  Institution,
+  ErrorHandlerService,
+  INSTITUTIONS_QUERY,
+  DELETE_INSTITUTION_MUTATION,
+  INSTITUTION_QUERY,
+  InstitutionService
+} from &#x27;src/app/core&#x27;;
+
+@Component({
+  selector: &#x27;app-institution-home&#x27;,
+  templateUrl: &#x27;./institution-home.component.html&#x27;,
+  styleUrls: [&#x27;./institution-home.component.scss&#x27;]
+})
+export class InstitutionHomeComponent implements OnInit {
+  @ViewChild(DatatableComponent) private table: DatatableComponent;
+  // datatable parmsviewInit
+  loadingIndicator: Boolean &#x3D; true;
+  rows &#x3D; [];
+  perPage &#x3D; 5;
+
+  tableMessages &#x3D; {
+    emptyMessage: &#x27;Aucune donnée à afficher&#x27;,
+    totalMessage: &#x27;total&#x27;
+  };
+
+  // modal parms
+  bsModalRef: BsModalRef;
+  bsModalRefinfo: BsModalRef;
+  bsModelConfirm: BsModalRef;
+
+  institution: Institution;
+  institutionsList: Institution[];
+
+  errors &#x3D; [];
+  logoUrl &#x3D; &#x27;assets/img/camera.png&#x27;;
+
+  initialState &#x3D; {};
+
+  constructor(
+    private _institutionService: InstitutionService,
+    private _modalService: BsModalService,
+    private _toaster: ToastrService,
+    private _router: Router,
+    private _route: ActivatedRoute,
+    private _errorHandler: ErrorHandlerService,
+  ) { }
+
+  ngOnInit() {
+    this.getInstitutions();
+
+  }
+
+
+
+  /**
+   * get institutions
+   *
+   */
+  getInstitutions() {
+    this._institutionService.getInstitutions(INSTITUTIONS_QUERY)
+      .valueChanges
+      .subscribe(
+        (res: any) &#x3D;&gt; {
+
+          this.institutionsList &#x3D; res.data.institutions;
+          this.rows &#x3D; [...this.institutionsList];
+          this.loadingIndicator &#x3D; false;
+        },
+        (error) &#x3D;&gt; { this._errorHandler.handleError(error); }
+      );
+  }
+
+  /**
+   * Opens modal form institution
+   * @param [id] 
+  /**
+   *
+   *
+   * @param {number} [id&#x3D;null]
+   */
+  openModalFormInstitution(id: number &#x3D; null) {
+    if (id !&#x3D;&#x3D; null) {
+      this._institutionService.getInstitution(INSTITUTION_QUERY, id)
+        .subscribe(
+          (res: any) &#x3D;&gt; {
+
+            this.initialState &#x3D; {
+              institution: res.data.institution,
+              institutions: this.institutionsList,
+            };
+
+            this.openModal(this.initialState);
+          },
+          (errors) &#x3D;&gt; { this._errorHandler.handleError(errors); },
+
+        );
+    } else {
+      this.initialState &#x3D; {
+        institution: new Institution(),
+        institutions: this.institutionsList,
+      };
+      this.openModal(this.initialState);
+    }
+  }
+
+  /**
+   * Opens modal
+   * @param initialState 
+   */
+  openModal(initialState) {
+
+    this.bsModalRef &#x3D; this._modalService.show(ModalFormInstitutionComponent, {
+      class: &#x27;modal-lg&#x27;,
+      backdrop: &#x27;static&#x27;,
+      initialState,
+    });
+
+    this.bsModalRef.content.institutionSubject.subscribe(
+      (res) &#x3D;&gt; {
+        if (res.edit) {
+          this._toaster.info(&#x27;&lt;h3&gt;Catégorie modifiée avec succès&lt;/h3&gt;&#x27;, &#x27; &#x27;, {
+            &#x27;timeOut&#x27;: 4000,
+            &#x27;progressBar&#x27;: true,
+            &#x27;enableHtml&#x27;: true
+          });
+        } else {
+          this._institutionService.updateCache(INSTITUTIONS_QUERY, res.institution);
+          //update datatable rows
+          this.rows &#x3D; [...this.institutionsList];
+
+          this._toaster.success(&#x27;&lt;h3&gt;Catégorie ajoutée avec succès&lt;/h3&gt;&#x27;, &#x27; &#x27;, {
+            &#x27;timeOut&#x27;: 3000,
+            &#x27;progressBar&#x27;: true,
+            &#x27;enableHtml&#x27;: true
+          });
+        }
+      }
+    )
+  }
+
+
+  goToInfoInstitution(id) {
+    this._router.navigate([id], {
+      relativeTo: this._route
+    });
+  }
+
+
+  // delete functions
+  onDelete(id) {
+    // tslint:disable-next-line:no-shadowed-variable
+    const initialState &#x3D; {
+      message: &#x27;Êtes-vous sûr de vouloir supprimer cette Institutions ?&#x27;,
+      state: &#x27;danger&#x27;
+    };
+
+    this.bsModelConfirm &#x3D; this._modalService.show(ConfirmModalComponent, { initialState });
+
+    this.bsModelConfirm.content.onClose.subscribe(
+      (response: Boolean) &#x3D;&gt; {
+        if (response) {
+          this._institutionService.delete(DELETE_INSTITUTION_MUTATION, id).
+            subscribe(
+              (res) &#x3D;&gt; {
+                this._toaster.info(&#x27;&lt;h3&gt;Catégorie supprimée avec succès&lt;/h3&gt;&#x27;, &#x27; &#x27;, {
+                  &#x27;timeOut&#x27;: 3000,
+                  &#x27;progressBar&#x27;: true,
+                  &#x27;enableHtml&#x27;: true
+                });
+
+              }
+            );
+          this.bsModelConfirm.hide();
+        }
+      }
+    );
+  }
+}
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;row wrapper border-bottom white-bg page-heading&quot;&gt;
+  &lt;div class&#x3D;&quot;col-lg-10&quot;&gt;
+    &lt;h2&gt;Institutions &lt;/h2&gt;
+    &lt;ol class&#x3D;&quot;breadcrumb&quot;&gt;
+      &lt;li class&#x3D;&quot;breadcrumb-item&quot;&gt;
+        &lt;a [routerLink]&#x3D;&quot;[&#x27;/admin&#x27;]&quot;&gt;Page d&#x27;accueil&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class&#x3D;&quot;breadcrumb-item active&quot;&gt;
+        &lt;a [routerLink]&#x3D;&quot;[&#x27;/admin/institutions&#x27;]&quot;&gt;Institutions&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;!-- &lt;li class&#x3D;&quot;breadcrumb-item active&quot;&gt;
+        &lt;strong&gt;Product list&lt;/strong&gt;
+      &lt;/li&gt; --&gt;
+    &lt;/ol&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;col-lg-2&quot;&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;wrapper wrapper-content animated fadeInRight ecommerce&quot;&gt;
+
+  &lt;button (click)&#x3D;&quot;openModalFormInstitution()&quot; type&#x3D;&quot;button&quot;
+    class&#x3D;&quot;btn btn-block btn-outline btn-primary m-b-md  &quot;&gt;Nouvelle
+    Institution&lt;/button&gt;
+
+
+  &lt;div class&#x3D;&quot;ibox-content m-b-xs   border-bottom&quot;&gt;
+    &lt;div class&#x3D;&quot;row m-t-md&quot;&gt;
+      &lt;div class&#x3D;&quot;col-sm-6&quot;&gt;
+        &lt;div class&#x3D;&quot;form-group row&quot;&gt;
+          &lt;label class&#x3D;&quot;col-lg-1 col-form-label   pr-0&quot;&gt;Afficher&lt;/label&gt;
+          &lt;div class&#x3D;&quot;col-lg-2&quot;&gt;
+            &lt;select class&#x3D;&quot;form-control-sm&quot; name&#x3D;&quot;perPage&quot; [(ngModel)]&#x3D;&quot;perPage&quot;&gt;
+              &lt;option value&#x3D;5 selected&gt;5&lt;/option&gt;
+              &lt;option value&#x3D;10&gt;10&lt;/option&gt;
+              &lt;option value&#x3D;25&gt;25&lt;/option&gt;
+              &lt;option value&#x3D;50&gt;50&lt;/option&gt;
+              &lt;option value&#x3D;100&gt;100&lt;/option&gt;
+            &lt;/select&gt;
+          &lt;/div&gt;
+          &lt;label class&#x3D;&quot;col-md-1 col-form-label   pl-1&quot;&gt;Élément&lt;/label&gt;
+
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-sm-6&quot;&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;input type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;Recherche...&quot; class&#x3D;&quot;offset-4 col-md-8 form-control-sm&quot;&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class&#x3D;&quot;row&quot;&gt;
+    &lt;div class&#x3D;&quot;col-lg-12&quot;&gt;
+
+      &lt;ngx-datatable #table class&#x3D;&quot;material  &quot; [sortType]&#x3D;&quot;&#x27;single&#x27;&quot; [reorderable]&#x3D;&quot;false&quot; [rows]&#x3D;&quot;rows&quot;
+        [columnMode]&#x3D;&quot;&#x27;force&#x27;&quot; [headerHeight]&#x3D;&quot;50&quot; [footerHeight]&#x3D;&quot;50&quot; [rowHeight]&#x3D;&quot;80&quot; [messages]&#x3D;&quot;tableMessages&quot;
+        [limit]&#x3D;&quot;perPage&quot; [loadingIndicator]&#x3D;&quot;loadingIndicator&quot; [selectionType]&#x3D;&quot;&#x27;single&#x27;&quot;&gt;
+
+        &lt;ngx-datatable-column name&#x3D;&quot;logo&quot; headerClass&#x3D;&quot;text-center&quot; cellClass&#x3D;&quot;text-center&quot;&gt;
+          &lt;ng-template ngx-datatable-cell-template let-row&#x3D;&quot;row&quot; let-rowIndex&#x3D;&#x27;rowIndex&#x27;&gt;
+            &lt;div class&#x3D;&quot;img-preview img-preview-sm&quot;&gt;
+              &lt;img [src]&#x3D;&quot;logoUrl&quot; class&#x3D;&quot;img-md&quot;&gt;
+            &lt;/div&gt;
+          &lt;/ng-template&gt;
+        &lt;/ngx-datatable-column&gt;
+        &lt;ngx-datatable-column name&#x3D;&quot;NAME&quot;&gt;&lt;/ngx-datatable-column&gt;
+        &lt;ngx-datatable-column name&#x3D;&quot;CATEGORY&quot;&gt;
+          &lt;ng-template ngx-datatable-cell-template let-row&#x3D;&quot;row&quot;&gt;
+            {{ row.category?.name}}
+          &lt;/ng-template&gt;
+        &lt;/ngx-datatable-column&gt;
+
+
+        &lt;ngx-datatable-column prop&#x3D;&quot;country_seat&quot; name&#x3D;&quot;COUNTRY&quot;&gt;&lt;/ngx-datatable-column&gt;
+        &lt;ngx-datatable-column prop&#x3D;&quot;web_site&quot; name&#x3D;&quot;WEB&quot;&gt;&lt;/ngx-datatable-column&gt;
+        &lt;ngx-datatable-column name&#x3D;&quot;EMAIL&quot;&gt;&lt;/ngx-datatable-column&gt;
+
+
+
+        &lt;ngx-datatable-column name&#x3D;&quot;ACTIONS&quot; headerClass&#x3D;&quot;text-center&quot; cellClass&#x3D;&quot;text-center&quot;&gt;
+          &lt;ng-template ngx-datatable-cell-template let-row&#x3D;&quot;row&quot; let-rowIndex&#x3D;&#x27;rowIndex&#x27;&gt;
+            &lt;div class&#x3D;&quot;btn-group&quot;&gt;
+              &lt;button (click)&#x3D;&quot;
+goToInfoInstitution(row.id)&quot; class&#x3D;&quot;btn btn-primary btn-xs&quot;&gt;Info&lt;/button&gt;
+              &lt;button (click)&#x3D;&quot;
+openModalFormInstitution(row.id)&quot; class&#x3D;&quot;btn btn-warning btn-xs&quot;&gt;Éditer&lt;/button&gt;
+              &lt;button (click)&#x3D;&quot;
+onDelete(row.id)&quot; class&#x3D;&quot;btn btn-danger btn-xs&quot;&gt;Supprimer&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/ng-template&gt;
+        &lt;/ngx-datatable-column&gt;
+      &lt;/ngx-datatable&gt;
+
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./institution-home.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="row wrapper border-bottom white-bg page-heading">  <div class="col-lg-10">    <h2>Institutions </h2>    <ol class="breadcrumb">      <li class="breadcrumb-item">        <a [routerLink]="[\'/admin\']">Page d\'accueil</a>      </li>      <li class="breadcrumb-item active">        <a [routerLink]="[\'/admin/institutions\']">Institutions</a>      </li>      <!-- <li class="breadcrumb-item active">        <strong>Product list</strong>      </li> -->    </ol>  </div>  <div class="col-lg-2">  </div></div><div class="wrapper wrapper-content animated fadeInRight ecommerce">  <button (click)="openModalFormInstitution()" type="button"    class="btn btn-block btn-outline btn-primary m-b-md  ">Nouvelle    Institution</button>  <div class="ibox-content m-b-xs   border-bottom">    <div class="row m-t-md">      <div class="col-sm-6">        <div class="form-group row">          <label class="col-lg-1 col-form-label   pr-0">Afficher</label>          <div class="col-lg-2">            <select class="form-control-sm" name="perPage" [(ngModel)]="perPage">              <option value=5 selected>5</option>              <option value=10>10</option>              <option value=25>25</option>              <option value=50>50</option>              <option value=100>100</option>            </select>          </div>          <label class="col-md-1 col-form-label   pl-1">Élément</label>        </div>      </div>      <div class="col-sm-6">        <div class="form-group">          <input type="text" placeholder="Recherche..." class="offset-4 col-md-8 form-control-sm">        </div>      </div>    </div>  </div>  <div class="row">    <div class="col-lg-12">      <ngx-datatable #table class="material  " [sortType]="\'single\'" [reorderable]="false" [rows]="rows"        [columnMode]="\'force\'" [headerHeight]="50" [footerHeight]="50" [rowHeight]="80" [messages]="tableMessages"        [limit]="perPage" [loadingIndicator]="loadingIndicator" [selectionType]="\'single\'">        <ngx-datatable-column name="logo" headerClass="text-center" cellClass="text-center">          <ng-template ngx-datatable-cell-template let-row="row" let-rowIndex=\'rowIndex\'>            <div class="img-preview img-preview-sm">              <img [src]="logoUrl" class="img-md">            </div>          </ng-template>        </ngx-datatable-column>        <ngx-datatable-column name="NAME"></ngx-datatable-column>        <ngx-datatable-column name="CATEGORY">          <ng-template ngx-datatable-cell-template let-row="row">            {{ row.category?.name}}          </ng-template>        </ngx-datatable-column>        <ngx-datatable-column prop="country_seat" name="COUNTRY"></ngx-datatable-column>        <ngx-datatable-column prop="web_site" name="WEB"></ngx-datatable-column>        <ngx-datatable-column name="EMAIL"></ngx-datatable-column>        <ngx-datatable-column name="ACTIONS" headerClass="text-center" cellClass="text-center">          <ng-template ngx-datatable-cell-template let-row="row" let-rowIndex=\'rowIndex\'>            <div class="btn-group">              <button (click)="goToInfoInstitution(row.id)" class="btn btn-primary btn-xs">Info</button>              <button (click)="openModalFormInstitution(row.id)" class="btn btn-warning btn-xs">Éditer</button>              <button (click)="onDelete(row.id)" class="btn btn-danger btn-xs">Supprimer</button>            </div>          </ng-template>        </ngx-datatable-column>      </ngx-datatable>    </div>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AcademicLevelComponent', 'selector': 'app-academic-level'},{'name': 'AdminComponent', 'selector': 'app-admin'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ConfirmModalComponent', 'selector': 'app-confirm-modal'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'InstitutionCategoryComponent', 'selector': 'app-institution-category'},{'name': 'InstitutionHomeComponent', 'selector': 'app-institution-home'},{'name': 'InstitutionInfoComponent', 'selector': 'app-institution-info'},{'name': 'LandingComponent', 'selector': 'app-landing'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MapsComponent', 'selector': 'app-maps'},{'name': 'ModalFormAcademicLevelComponent', 'selector': 'app-modal-form-academic-level'},{'name': 'ModalFormInstitutionCategoryComponent', 'selector': 'app-modal-form-institution-category'},{'name': 'ModalFormInstitutionComponent', 'selector': 'app-modal-form-institution'},{'name': 'ModalFormPersonComponent', 'selector': 'app-modal-form-person'},{'name': 'NavBarComponent', 'selector': 'app-nav-bar'},{'name': 'NavBarTopComponent', 'selector': 'app-nav-bar-top'},{'name': 'NavLeftComponent', 'selector': 'app-nav-left'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PersonComponent', 'selector': 'app-person'},{'name': 'PersonHomeComponent', 'selector': 'app-person-home'},{'name': 'PersonsCategoryComponent', 'selector': 'app-persons-category'},{'name': 'RepositoryComponent', 'selector': 'app-repository'},{'name': 'RequestResetComponent', 'selector': 'app-request-reset'},{'name': 'ResponseResetComponent', 'selector': 'app-response-reset'},{'name': 'SignupComponent', 'selector': 'app-signup'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'InstitutionHomeComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'InstitutionHomeComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

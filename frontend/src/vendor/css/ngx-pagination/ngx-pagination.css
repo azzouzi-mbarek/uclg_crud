@@ -1,0 +1,103 @@
+ .my-pagination .ngx-pagination {
+   margin-left: 0;
+   margin-bottom: 1rem;
+ }
+
+ .my-pagination .ngx-pagination::before,
+ .my-pagination .ngx-pagination::after {
+   content: ' ';
+   display: table;
+ }
+
+ .my-pagination .ngx-pagination::after {
+   clear: both;
+ }
+
+ .my-pagination .ngx-pagination li {
+   -moz-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   margin-right: 0.0625rem;
+   border-radius: 0;
+
+ }
+
+ .my-pagination .ngx-pagination li {
+   display: inline-block;
+   background-color: #FFFFFF;
+   border: 1px solid #DDDDDD;
+ }
+
+ .my-pagination .ngx-pagination a,
+ .my-pagination .ngx-pagination button {
+   color: #666A6C;
+   display: block;
+   padding: 0.1875rem 0.625rem;
+   border-radius: 0;
+ }
+
+ .my-pagination .ngx-pagination a:hover,
+ .my-pagination .ngx-pagination button:hover {
+   background: #e6e6e6;
+ }
+
+ .my-pagination .ngx-pagination .current {
+   padding: 0.1875rem 0.625rem;
+   background: #1ab394;
+   color: #fefefe;
+   cursor: default;
+ }
+
+ .my-pagination .ngx-pagination .disabled {
+   padding: 0.1875rem 0.625rem;
+   color: #cacaca;
+   cursor: default;
+ }
+
+ .my-pagination .ngx-pagination .disabled:hover {
+   background: transparent;
+ }
+
+ .my-pagination .ngx-pagination a,
+ .my-pagination .ngx-pagination button {
+   cursor:
+     pointer;
+ }
+
+ .my-pagination .ngx-pagination .pagination-previous a::before,
+ .my-pagination .ngx-pagination .pagination-previous.disabled::before {
+   content: '<<';
+   display: inline-block;
+   /* margin-right: 0.5rem; */
+ }
+
+ .my-pagination .ngx-pagination .pagination-next a::after,
+ .my-pagination .ngx-pagination .pagination-next.disabled::after {
+   content: '>>';
+   display: inline-block;
+   /* margin-left:
+     0.5rem; */
+ }
+
+ .my-pagination .ngx-pagination .show-for-sr {
+   position: absolute !important;
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
+   clip:
+     rect(0, 0, 0, 0);
+ }
+
+ .my-pagination .ngx-pagination .small-screen {
+   display: none;
+ }
+
+ @media screen and (max-width: 601px) {
+   .my-pagination .ngx-pagination.responsive .small-screen {
+     display: inline-block;
+   }
+
+   .my-pagination .ngx-pagination.responsive li:not(.small-screen):not(.pagination-previous):not(.pagination-next) {
+     display: none;
+   }
+ }

@@ -1,0 +1,117 @@
+ type Institution { 
+    id: ID!
+    name: String!
+    logo:String
+    acronym:String
+    description: String
+    foundation_year: Int
+    country_seat:String
+    organe_tutelle:String
+    areas_intervention:String
+    target_beneficiary:String
+    web_site:String
+    email:String
+    phone:String
+    address:String
+    localisation:String
+    created_at: DateTime
+    updated_at: DateTime
+    category: InstitutionCategory @belongsTo
+    }
+
+type InstitutionCategory { 
+    id: ID!
+    name: String!
+    created_at: DateTime
+    updated_at: DateTime
+    institutions: [Institution] @hasMany
+    }
+ 
+ 
+extend type Query{
+    institutions: [Institution] @all
+    institution(id:ID @eq) :Institution @find
+
+    institutionCategories: [InstitutionCategory] @all
+    category(id: ID @eq) :InstitutionCategory @find
+}
+
+ 
+
+input institutionInput {
+        name: String @rules(apply : ["required" , "unique:institutions"])
+        acronym: String  @rules(apply : ["string" , "nullable"])
+        description: String  @rules(apply : ["nullable" , "string"])
+        foundation_year: Int @rules(apply : ["nullable" ])
+        country_seat: String @rules(apply : ["nullable" ])
+        organe_tutelle: String @rules(apply : ["nullable" ])
+        areas_intervention: String @rules(apply : ["nullable" ])
+        target_beneficiary: String @rules(apply : ["nullable" ])
+        phone: String @rules(apply : ["nullable" ])
+        email: String @rules(apply : ["nullable" , "email"])
+        web_site: String @rules(apply : ["nullable" ])
+        address: String @rules(apply : ["nullable" ])
+        localisation: String @rules(apply : ["nullable" ])
+        institution_category_id: Int  @rules(apply : ["nullable" ])
+}
+
+ 
+extend type Mutation{
+
+    # institution mutation
+       CreateInstitution(
+        name: String @rules(apply : ["required" , "unique:institutions"])
+        acronym: String  @rules(apply : ["nullable" ])
+        description: String  @rules(apply : ["nullable" , "string"])
+        foundation_year: Int @rules(apply : ["nullable" , "digits:4"])
+        country_seat: String @rules(apply : ["nullable" ])
+        organe_tutelle: String @rules(apply : ["nullable" ])
+        areas_intervention: String @rules(apply : ["nullable" ])
+        target_beneficiary: String @rules(apply : ["nullable" ])
+        phone: String @rules(apply : ["nullable" ])
+        email: String @rules(apply : ["nullable" , "email"])
+        web_site: String @rules(apply : ["nullable" ])
+        address: String @rules(apply : ["nullable" ])
+        localisation: String @rules(apply : ["nullable" ])
+        institution_category_id: Int  @rules(apply : ["nullable" ])
+         ) : Institution @create
+
+
+       UpdateInstitution(
+        id: ID!
+        name: String @rules(apply : ["required"])
+        acronym: String  @rules(apply : ["nullable" ])
+        description: String  @rules(apply : ["nullable" , "string"])
+        foundation_year: Int @rules(apply : ["nullable" ])
+        country_seat: String @rules(apply : ["nullable" ])
+        organe_tutelle: String @rules(apply : ["nullable" ])
+        areas_intervention: String @rules(apply : ["nullable" ])
+        target_beneficiary: String @rules(apply : ["nullable" ])
+        phone: String @rules(apply : ["nullable" ])
+        email: String @rules(apply : ["nullable" , "email"])
+        web_site: String @rules(apply : ["nullable" ])
+        address: String @rules(apply : ["nullable" ])
+        localisation: String @rules(apply : ["nullable" ])
+        institution_category_id: Int  @rules(apply : ["nullable" ])
+       ): Institution @update 
+
+      deleteInstitution(
+          id:ID! @rules(apply: ["required"])
+          ) : Institution @delete
+
+     # institution categories mutation
+
+     CreateInstitutionCategory(
+         name: String @rules(apply : ["required" , "unique:institution_categories"])
+         ) : InstitutionCategory @create 
+
+       UpdateInstitutionCategory(
+           id: ID @rules(apply: ["required"])
+           name: String   @rules(apply : ["required" , "unique:institution_categories"]) 
+       ): InstitutionCategory  @update
+
+      deleteInstitutionCategory(
+          id:ID! @rules(apply: ["required"])
+          ) : InstitutionCategory @delete
+}
+ 

@@ -1,0 +1,71 @@
+#import institution.graphql
+ 
+ 
+
+scalar DateTime @scalar(class: "Nuwave\\Lighthouse\\Schema\\Types\\Scalars\\DateTime")
+scalar Date @scalar(class: "Nuwave\\Lighthouse\\Schema\\Types\\Scalars\\Date")
+
+type Query{
+    me: User @auth
+    # users: [User!]! @all
+    users: [User!]!  @all 
+    user(id: ID @eq): User  @find
+} 
+
+
+type Mutation   {
+    login(
+        email :String! @rules(apply : ["required" , "email"]), 
+        password : String! @rules(apply : ["required" , "min:6"])
+        ) : LoginPayload @field(resolver : "App\\Http\\Controllers\\AuthController@login") 
+
+
+    createUser (
+        name: String @rules(apply: ["required"])
+        email: String @rules(apply: ["required", "email", "unique:users,email"])
+        password :String @rules(apply : ["required" ,"confirmed"])
+        password_confirmation :String @rules(apply : ["required"])
+    ): LoginPayload @field(resolver : "App\\Http\\Controllers\\AuthController@signup")   
+
+
+
+    
+    updateUser(
+        id: ID @rules(apply: ["required"])
+        name: String
+        email: String @rules(apply: ["email"])
+    ): User @update(model: "App\\Models\\User")
+    
+    deleteUser(
+        id: ID @rules(apply: ["required"])
+    ): User @delete(model: "App\\Models\\User")
+}
+
+type User {
+    id: ID!
+    name: String!
+    email: String!
+    created_at: DateTime!
+    updated_at: DateTime!
+}
+
+type AuthToken { 
+    access_token : String!
+    token_type : String!
+    expires_in : Int!
+    # refresh_token : String! 
+}
+type error { 
+    message : String
+}
+
+type LoginPayload {
+    auth_token : AuthToken
+    error : error
+}
+
+
+
+
+
+ 
